@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Learning-JS</title>
+</head>
+<body>
+
+  <!-- my own static message to you! -->
+  <div id="mrAlpha-message">
+     <h1 class="font-large mb-10">👋 Hello There</h1>
+     <h3>If You Want To See My JS Training Codes, Just<a style="padding: 5px;" href="js/main.js">Click Here</a>Or Open Main Folder In an IDE as Workspace To Manipulate and Review Codes!</h3>
+     <p>Each Part of my <strong>JS Codes</strong> are consist of Notes and Related Trainings !</p>
+     <p>* You have to <strong>un-comment</strong> each section of code that you want to understand and find that how it works.</p>
+     <p>* Mind the confliction occurance by decleration of variables!</p>
+  </div>
+  <p>↓ You Can Visit My Mini Projects By Click On Each Button ↓</p>
+     <div class="mb-10" id="projects">
+        <button><a href="/html/bg-rand.html" target="_blank">Random-Bg-Color</a></button>
+        <button><a href="/html/ticket.html" target="_blank">Ticket-Reservation</a></button>
+        <button><a href="/html/weather.html" target="_blank">Weather-App</a></button>
+        <button><a href="/html/temp-converter.html" target="_blank">Temp-Coverter</a></button>
+     </div>
+  
+  <u class="mb-30">↓ Also You Can See Some Related Exercises To Each Section On Bellow ↓</u>
+  
+  <!-- used in #4, #5, #8 and #16 js -->
+  <h2 id="coursTitle">
+   <span class="newTitle blue" style="border: 1px solid #456; padding: 10px; border-radius: 5px;">Here is Intermediate Level of Learning JS </span> 
+  </h2>
+
+  
+  <!-- #3 access to attributes getAtt .. and setAtt.. -->
+  <!-- #4 access to element style by  -->
+  <!-- #5 access to element by selectors (getEleme) -->
+  <!-- #6 , #7 build element by create element and .append exp -->
+
+  <ul id="myList" style="margin-top: 30px;">
+    <li class="listItem">Home</li>
+    <li class="listItem">About Us</li>
+    <li class="listItem">Contact Us</li>
+    <li class="listItem">Products</li>
+  </ul>
+
+  <!-- used in #5 js -->
+  <input type="text" id="input" value="This is input value">
+
+  <!-- used in #5 to access values -->
+
+  <!-- <select id="selectBox">
+    <option value="iran">IR</option>
+    <option value="usa">US</option>
+    <option value="iraq">IQ</option>
+  </select> -->
+
+  
+<!-- used in #8 js to change h2 color -->
+  <h2 id="h2ColorChange">
+  <span style="border: 1px solid #456; padding: 5px; border-radius: 5px;">Click Button To Change My Color! </span> 
+  </h2>
+  <button id="first-btn" onclick='firstFunc()'>Change H2 Color to RED!</button>
+
+  
+  <!-- #9 bulb on/off toggle exercise -->
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <img id="bulb" src="Images/bulboff.gif">
+    <button id="bulb-btn" onclick="lightControl()" style="display: block; margin: 10px;">Turn On</button>
+  </div>
+    
+  
+  <!-- #10 Login Form Validation Exercise  -->
+  <form id="myForm" action="" style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 5px;">
+
+    <label for="formUserName">Usere Name:</label>
+    <input id="formUserName" type="text" autocomplete="off">
+
+    <label for="formPassWord">Password:</label>
+    <input id="formPassWord" type="password">
+
+    <button onclick="checkFormInputs()">Login</button>
+  </form>
+   
+ 
+  <!-- #11 on JS -->
+    <!-- second way for resolve previous exercise and learn onkey's events -->
+
+   <!-- <form id="myForm" action="" style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 5px;">
+
+     <label for="userName">Usere Name:</label> 
+     <input id="userName" onkeypress="keyLog()" type="text">  call function when hit 
+     <input id="formUserName" onkeyup="keyLog()" type="text">  call function when key up 
+     <input id="formUserName" onkeydown="keyLog()" type="text">  call function when key down, simmilar to onkeypress 
+  
+      <label for="formPassWord">Password:</label>
+      <input id="formPassWord" type="password">
+      <button onclick="checkInputs()">Login</button>
+  </form>
+   -->
+
+<!-- 
+  <form id="myForm" action="" style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 5px;">
+
+    <label for="userName">User Name:</label>
+
+    <input onkeydown="checkName()" id="userName" type="text">
+
+    <span id="nameMessage" style="font-size: 13px; margin-bottom: 10px; display: none;">نام کاربری باید حداقل 12 کارکتر داشته باشد</span>
+
+    <label for="passWord">Password:</label>
+
+    <input onkeydown="checkPass()" id="passWord" type="password">
+
+    <span id="passMessage" style="font-size: 13px; margin-bottom: 10px; display: none; ">رمز عبور باید حداقل دارای 8 کارکتر باشد</span>
+
+    <button>Sign Up</button>
+  </form> 
+  
+  -->
+
+  <!-- #13 on JS to show onblur and onfocus will log each condition -->
+
+   <form >
+    <input type="text" onblur="nameBlur()" onfocus="nameFocus()" placeholder="User Name">
+    <input type="password" onblur="passBlur()" onfocus="passFocus()" placeholder="Password">
+  </form> 
+  
+
+  <!-- #onchange exp : it will log value after select an option -->
+
+  <select id="cars" onchange="carModel()">
+    <option value="BMW">BMW</option>
+    <option value="Benz">Benz</option>
+    <option value="Porsche">Porsche</option>
+    <option value="Ford">Ford</option>
+  </select>
+  
+ 
+  <!-- #25 on js >> append vs appendChild -->
+  <ul id="services">
+    <li>Service 1</li>
+    <li>Service 2</li>
+    <li>Service 3</li>
+    <li>Service 4</li>
+  </ul> 
+  <button onclick="addNewLi()">Click To add New Li</button>
+
+  <!-- #26 on Js >> onKeyUp vs OnKeyDown vs onKeyPress -->
+   <input type="text" placeholder="Press A Key And Watch clg!" onkeydown="keyDownHandler()" onkeypress="keyPressHandler() " onkeyup="keyUpHandler()">
+
+  <script src="js/main.js"></script>
+</body>
+</html>

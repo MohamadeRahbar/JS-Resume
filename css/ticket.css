@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../Images/sky.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 5%;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 10px;
+}
+
+.inputs {
+    width: 45%;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #ddd;
+    
+}
+
+button:active {
+    background-color: #aaa;
+    color: #ff0
+    
+}
