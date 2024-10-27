@@ -18,6 +18,10 @@ body {
     padding: 50px;
   }
 
+hr {
+    width: 100%;
+}
+
 ul li {
     text-align: center;
     padding: 5px;
