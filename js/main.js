@@ -1,6 +1,3 @@
-
-3
-
 //                              In The Name Of Allah                             //
 
 // Welcome to my interemediate JS training section
@@ -400,7 +397,130 @@ function keyUpHandler() {
 // onKeyPress just support keys that enter a word or a number or a line! not support on special keys such as: tab , ctrl , shift , esc , back space and F(x)s 
 
 
-// ========================= #20 | | ==========================
+// ===================== #31 | Difference between props and attrs | ===================== 
+
+// access attributes of elements by attr's and prop's methods because each html node is an object >> . or getAtt('')
+
+let h1Elem31 = document.getElementById('Js-31')
+
+// console.log(h1Elem31.getAttribute('class')); // will log 
+// console.log(h1Elem31.className);  // also will log 
+
+// // we can set new attr's for it!
+
+// // but we can access to custom attr's just by getAtt("") not . !
+
+// console.log(h1Elem31.getAttribute('location')); // >> iran
+// console.log(h1Elem31.location); // >> undefined
+
+// // also we can set new props for each element!
+let input31 = document.getElementById('input-31')
+
+input31.userType = 'admin' // add property 
+
+// console.log(input31.userType) // >> admin
+// console.log(input31.getAttribute("userType")); // >> null, because it declared in JS as a property and getAtt will, return value of an existed Attrbute in Html!
+
+// ================= #32 | hasAttribute & removeAttribute | ================= 
+
+//hasAttribute >> boolean
+
+let input32 = document.getElementById('input-32')
+
+// console.log(input32.hasAttribute('class')); // true
+// console.log(input32.hasAttribute('value')); // false
+
+// removeAttribute >> will removes attribute and not return anything (void)
+
+input32.removeAttribute('class'); // remove class
+// console.log(input32.hasAttribute('class')); // after remove >> false
+
+function removeAttr() {
+    input32.removeAttribute('placeholder'); // remove placeholder by click button
+
+}
+
+// ================= #33 | Third Way to set event | ================= 
+
+// #1 add event by set on(click) in html as an attribute 
+function showLog() {
+    console.log("Clicked By First Way");
+}
+
+// #2 add event by .addEventListener in js
+
+let btn33 = document.getElementById('btn-33')
+
+btn33.addEventListener('click', function (){
+    console.log('Clicked by second way');
+})
+
+// #3 add event by setAttr to element
+
+let btn33b = document.getElementById("btn-33b")
+
+btn33b.onclick = function () {
+    console.log('Clicked by third way');
+}
+
+// best way is #2
+
+// ================= #34 | onSubmit | ================= 
+
+// same as other events, we can do anything onSubmit!
+
+let loginForm = document.getElementById('login-form')
+
+loginForm.addEventListener('submit' , function(){
+    console.log('Submitted'); // will log Sumbitted but because of web refresh after click on login button, will desappeared very fast 
+})
+
+// ================= #35 | event object | ================= 
+
+let btn35 = document.getElementById('btn-35')
+let Inp35 = document.getElementById('inp-35')
+
+Inp35.addEventListener('keydown' , function (e) {
+    console.log(e.keyCode);
+    if (e.key === 'Enter'){
+        console.log("Enter!");
+    } else if (e.keyCode === 65){
+        console.log("a, entered!");
+    }
+})
+
+
+btn35.addEventListener('click' , function (e) {
+    console.log(e.clientX);
+})
+
+// ================= #36 | preventDefault | ================= 
+
+    // to prevent default event actions same as inputs, a tags and ...
+    // check .cancelable for availablity of preventDef
+
+    let login36 = document.getElementById('form-36')
+    let user36 = document.getElementById('user-36')
+
+    login36.addEventListener('submit' , function(e){
+        // e.preventDefault(); // now page will not refresh after submit!
+        console.log(e); 
+    
+    })
+
+    user36.addEventListener('keydown' , function(e){
+        if (e.key === 'F12'){
+            e.preventDefault()
+            
+        }
+        console.log(e.key);
+    })
+  
+
+// ================= #37 | event object | ================= 
+
+// ================= #38 | event object | ================= 
+
 
 // --------------------
 

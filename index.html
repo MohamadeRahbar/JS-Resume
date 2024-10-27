@@ -24,7 +24,7 @@
         <button><a href="/html/temp-converter.html" target="_blank">Temp-Coverter</a></button>
      </div>
   
-  <u class="mb-30">↓ Also You Can See Some Related Exercises To Each Section On Bellow ↓</u>
+  <u class="mb-30">↓ Also You Can See Some Related Exercises To Each JS Section On Bellow ↓</u>
   
   <!-- used in #4, #5, #8 and #16 js -->
   <h2 id="coursTitle">
@@ -36,8 +36,8 @@
   <!-- #4 access to element style by  -->
   <!-- #5 access to element by selectors (getEleme) -->
   <!-- #6 , #7 build element by create element and .append exp -->
-
-  <ul id="myList" style="margin-top: 30px;">
+  <hr>
+  <ul id="myList">
     <li class="listItem">Home</li>
     <li class="listItem">About Us</li>
     <li class="listItem">Contact Us</li>
@@ -45,18 +45,20 @@
   </ul>
 
   <!-- used in #5 js -->
+  <hr>
   <input type="text" id="input" value="This is input value">
 
   <!-- used in #5 to access values -->
-
-  <!-- <select id="selectBox">
+  <hr>
+  <select id="selectBox">
     <option value="iran">IR</option>
     <option value="usa">US</option>
     <option value="iraq">IQ</option>
-  </select> -->
+  </select>
 
   
-<!-- used in #8 js to change h2 color -->
+  <!-- used in #8 js to change h2 color -->
+  <hr>
   <h2 id="h2ColorChange">
   <span style="border: 1px solid #456; padding: 5px; border-radius: 5px;">Click Button To Change My Color! </span> 
   </h2>
@@ -64,6 +66,7 @@
 
   
   <!-- #9 bulb on/off toggle exercise -->
+  <hr>
   <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img id="bulb" src="Images/bulboff.gif">
     <button id="bulb-btn" onclick="lightControl()" style="display: block; margin: 10px;">Turn On</button>
@@ -71,6 +74,7 @@
     
   
   <!-- #10 Login Form Validation Exercise  -->
+  <hr>
   <form id="myForm" action="" style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 5px;">
 
     <label for="formUserName">Usere Name:</label>
@@ -99,7 +103,7 @@
   </form>
    -->
 
-<!-- 
+  <!-- 
   <form id="myForm" action="" style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 5px;">
 
     <label for="userName">User Name:</label>
@@ -120,14 +124,15 @@
   -->
 
   <!-- #13 on JS to show onblur and onfocus will log each condition -->
-
-   <form >
+  <hr>
+  <form >
     <input type="text" onblur="nameBlur()" onfocus="nameFocus()" placeholder="User Name">
     <input type="password" onblur="passBlur()" onfocus="passFocus()" placeholder="Password">
   </form> 
   
 
   <!-- #onchange exp : it will log value after select an option -->
+  <hr>
 
   <select id="cars" onchange="carModel()">
     <option value="BMW">BMW</option>
@@ -138,6 +143,7 @@
   
  
   <!-- #25 on js >> append vs appendChild -->
+  <hr>
   <ul id="services">
     <li>Service 1</li>
     <li>Service 2</li>
@@ -147,7 +153,57 @@
   <button onclick="addNewLi()">Click To add New Li</button>
 
   <!-- #26 on Js >> onKeyUp vs OnKeyDown vs onKeyPress -->
-   <input type="text" placeholder="Press A Key And Watch clg!" onkeydown="keyDownHandler()" onkeypress="keyPressHandler() " onkeyup="keyUpHandler()">
+  <hr>
+
+  <input type="text" placeholder="Press A Key And Watch clg!" onkeydown="keyDownHandler()" onkeypress="keyPressHandler() " onkeyup="keyUpHandler()">
+
+  <!-- #31 On JS | from now, i'll use section number for id and classes -->
+  <hr>
+
+  <h1 id="Js-31" location="iran" class="text-31">JS learning | 131th Section on Sabzlearn.ir </h1>
+  <input type="text" name="name" id="input-31" placeholder="Who is Admin?">
+
+  <!-- #32 On JS  -->
+  <hr>
+  <input type="text" class="userName-32" id="input-32" placeholder="Username...">
+  <button onclick="removeAttr()">Click To Remove</button>
+
+  <!-- #33 On JS  -->
+  <hr>
+  <button onclick="showLog()">B1 - Show Log</button>
+  <button id="btn-33">B2 - Show Log</button>
+  <button id="btn-33b">B3 - Show Log</button>
+
+  <!-- #34 On JS  -->
+  <hr>
+  <form id="login-form">
+    <div>
+      <input placeholder="Username" type="text">
+    </div>
+    <div>
+      <input placeholder="Password" type="password">
+    </div>
+    <input type="submit" value="Login">
+  </form>
+
+  <!-- #35 On JS  -->
+  <hr>
+  <p>Open clg to watch click and keyDown logs</p>
+  <input type="text" id="inp-35">
+  <button id="btn-35">Show Log</button>
+
+  <!-- #36 On JS  -->
+  <hr>
+  <p>Refresh page, then open clg and type or click on login, F12 on input is prevented!</p>
+  <form id="form-36">
+    <div>
+      <input type="text" placeholder="Username" id="user-36">
+    </div>
+    <input type="submit" value="Login">
+  </form>
+
+  <!-- #3 On JS  -->
+  <hr>
 
   <script src="js/main.js"></script>
 </body>
