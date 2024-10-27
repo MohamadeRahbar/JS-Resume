@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px 0;
+    padding: 50px;
   }
 
 ul li {
