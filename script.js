@@ -517,9 +517,93 @@ btn35.addEventListener('click' , function (e) {
     })
   
 
-// ================= #37 | event object | ================= 
+// ================= #39 | node | ================= 
 
-// ================= #38 | event object | ================= 
+// are 12 types
+
+// element , text , attribute , comment ...
+
+// node.nodeName, nodeType, nodeValue 
+
+
+// ================= #40 | DOM Navigation | ================= 
+
+// ==================
+// Parent Navigation 
+// ==================
+
+//Access to parent node of an element 
+
+ // .parentNode 
+ // .parentElement
+
+
+// =======================
+//   #Siblings Navigation
+// =======================
+
+ //Access to previous sibling element node of an element :
+
+//  .previousElementSibling.(...)
+
+// --------------------
+
+ //Access to next sibling element node of an element :
+
+//  .nextElementSibling.(...)
+
+// --------------------
+
+//Access to previous or next sibling of a node : such as text, element, comment or ... :
+
+  // .nextSibling.(...) 
+  // .previousSibling.(...)
+
+
+// =================
+// Child Navigation
+// =================
+
+// To count quantity of first childs of an element:
+
+// .childElementCount >> will return a number
+
+// --------------------
+
+// get element childs of an element node as an array:
+
+// .children >> access to specific child by [index] >> .children[3]
+
+// --------------------
+
+// get childs with any node type for an element as an array:
+
+// .childNode 
+
+// --------------------
+
+// to check is any child availble in an element or not
+
+// .hasChildNodes() >> return boolean
+
+// --------------------
+
+// to selct first or last child of an element
+
+// .firstChild 
+// .lastChild
+
+// --------------------
+
+// to selct first or last element child of an element
+
+// .firstElementChild 
+// .lastElementChild
+
+// ================= #41 | event object | ================= 
+
+// ================= #40 | event object | ================= 
+// ================= #40 | event object | ================= 
 
 
 // --------------------
