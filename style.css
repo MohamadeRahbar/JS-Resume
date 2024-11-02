@@ -86,6 +86,7 @@ ul li {
     background-color: #ccc;
     box-shadow: 0 1px 2px 2px #aaa;
     transition: all 0.18s ease;
+    position: relative;
 }
 
 #projects button:hover {
@@ -107,4 +108,16 @@ ul li {
     text-shadow: 0px 1px 2px #222;
     font-weight: bold;
     font-size: 18px;
+}
+
+.new {
+    border: 2px dashed #0fef !important;
+}
+
+.new::after {
+    content: 'New!';
+    color: red;
+    position: absolute;
+    top: 55px;
+    left: 50px;
 }

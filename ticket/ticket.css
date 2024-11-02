@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../Images/sky.jpg);
+    background-image: url(./images/sky.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
