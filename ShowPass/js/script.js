@@ -1,5 +1,5 @@
-﻿// Functions for select elems with id & class
-var $ = document;
+﻿// Holders & Functions for select elems with id & class 
+let $ = document;
 function _id(id_name) {
   return $.getElementById(id_name);
 }
@@ -8,17 +8,20 @@ function _class(class_name) {
   return $.getElementsByClassName(class_name);
 }
 
-// Select Elems
-var togglePassword = _class("toggle-password");
-var passwordField = _id("password-field");
+let togglePassword = _class("toggle-password");
+let passwordField = _id("password-field");
+
+
+console.log(togglePassword);
+console.log(passwordField);
 
 // Fire click event on eye icon
-togglePassword.addEventListener("click", function () {
+togglePassword[0].addEventListener("click", function () {
   if (passwordField.type == "text") {
-    passwordField.type = "pasword";
-    togglePassword.classList.remove("active");
+    passwordField.type = "password";
+    togglePassword[0].classList.remove("active");
   } else {
     passwordField.type = "text";
-    togglePassword.classList.add("active");
+    togglePassword[0].classList.add("active");
   }
 })
