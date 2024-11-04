@@ -1,4 +1,4 @@
-## Here is what i learn per each days at [SabzLearn](https://sabzlearn.ir/) for [CodeBox](https://codebox.ir/) !
+## Here is what i learn per each days for [CodeBox](https://codebox.ir/) !
 
 <img align="center" src="./Images/JSProjects.JPG">
 
