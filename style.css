@@ -116,6 +116,14 @@ ul li {
     border: 2px dashed #ff0 !important;
 }
 
+.new:hover {
+    border: 2px dashed #aaaa35 !important;
+}
+
+.new:active {
+    border: 2px dotted #444 !important;
+}
+
 .new::after {
     content: 'New!';
     color: red;
