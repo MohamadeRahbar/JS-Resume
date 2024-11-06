@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="alphaToDo">
+        <ul id="todos">
+            <li>
+                <span>First Job</span>
+                <i class="fa fa-trash-o delete"></i>
+            </li>
+            <li>
+                <span>Second Job</span>
+                <i class="fa fa-trash-o delete"></i>
+            </li>
+        </ul>
+        <input id="addTodo" type="text" onblur="this.focus()" autofocus autocomplete="off"
+            placeholder="Enter New Todo..">
+    </div>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
