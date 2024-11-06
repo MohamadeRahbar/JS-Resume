@@ -64,7 +64,7 @@
 //  let h1Elem = document.getElementById("coursTitle");
 
 //  h1Elem.style.color = '#f0f' // >> h1 color will change 
- 
+
 //  h1Elem.style.fontSize = '30px' // >> h1 size will increase
 
 //  let liElems = document.getElementsByClassName("listItem")
@@ -133,7 +133,7 @@
 // secondlistItem.innerText = 'Jobs'
 
 // ulElem.append(newlistItem) // >> will append <li>Services</li> to the end of ul contents
- 
+
 // ulElem.appendChild(secondlistItem) // >> will append <li>Jobs</li> 
 
 // console.log(newlistItem);
@@ -145,8 +145,8 @@
 
 let h2Elem = document.getElementById('h2ColorChange');
 
-function firstFunc () {
-    
+function firstFunc() {
+
     h2Elem.style.color = "#f11"
 }
 
@@ -159,12 +159,12 @@ let isOff = true;
 
 function lightControl() {
 
-    if (isOff){
-        bulbImg.setAttribute("src" ,"Images/bulbon.gif")
+    if (isOff) {
+        bulbImg.setAttribute("src", "Images/bulbon.gif")
         bulbCondition.innerText = "Turn Off"
         isOff = false;
     } else {
-        bulbImg.setAttribute("src" ,"Images/bulboff.gif")
+        bulbImg.setAttribute("src", "Images/bulboff.gif")
         bulbCondition.innerText = "Turn On"
         isOff = true;
     }
@@ -177,7 +177,7 @@ function lightControl() {
 let formUserName = document.getElementById("formUserName");
 let formPassWord = document.getElementById("formPassWord");
 
-function checkFormInputs () {
+function checkFormInputs() {
 
     let userNameValue = formUserName.value;
     let passWordValue = formPassWord.value;
@@ -193,14 +193,14 @@ function checkFormInputs () {
 
 // ========================= #11 | KeyBoard Events | ==========================
 
-    // keyboard events : keyPress , keyDown , keyUp
+// keyboard events : keyPress , keyDown , keyUp
 
-    // function keyLog() {
-    //     console.log("Typed!");
-    // }
-    
-    // onkeypress support numbers and words
-    // onkeydown support Tab, esc more than onkeypress ...
+// function keyLog() {
+//     console.log("Typed!");
+// }
+
+// onkeypress support numbers and words
+// onkeydown support Tab, esc more than onkeypress ...
 
 // ========================= #12 | sign Up input check | ==========================
 
@@ -216,7 +216,7 @@ function checkFormInputs () {
 //     if (userNameValue.length < 12) {
 //         nameMessage.style.display = "inline"
 //         nameMessage.style.color = "#f00"
-    
+
 //     } else {
 //         nameMessage.style.display = "none"
 //     }
@@ -228,7 +228,7 @@ function checkFormInputs () {
 //     if (passWordValue.length < 8) {
 //         passMessage.style.display = "inline"
 //         passMessage.style.color = "#f00"
-    
+
 //     } else {
 //         passMessage.style.display = "none"
 //     }
@@ -240,19 +240,19 @@ function checkFormInputs () {
 
 // onblur >> go after and to the next input or field by click or Tab 
 
-function nameFocus () {
+function nameFocus() {
     console.log("name focus"); // after exit from userName field 
 }
 
-function nameBlur () {
+function nameBlur() {
     console.log("name blur"); // when enter to userName field
 }
 
-function passFocus () {
+function passFocus() {
     console.log("pass Focus"); // when enter to pass field
 }
 
-function passBlur () {
+function passBlur() {
     console.log("pass blur"); // when exit to pass field
 }
 
@@ -305,10 +305,10 @@ function passBlur () {
 
 let spnElemnt = document.querySelector(".newTitle")
 
-spnElemnt.addEventListener('click' , colorChanger)
+spnElemnt.addEventListener('click', colorChanger)
 
-function colorChanger () {
-    
+function colorChanger() {
+
     // spnElemnt.setAttribute('class' , "red") //  will change color of span to red
 
     // spnElemnt.classList.add('red') //  simmilar to setAtt but shorter and faster!
@@ -318,7 +318,7 @@ function colorChanger () {
     spnElemnt.classList.toggle('red') // by first click > red , second > blue and ...
 
 }
- 
+
 // ========================= #19 | onChange() event | ==========================
 
 // call onChange() in <select> element and <input> but most useful for select
@@ -327,9 +327,9 @@ function colorChanger () {
 
 let carModels = document.getElementById("cars")
 
-function carModel () {
+function carModel() {
     console.log(carModels.value);
-} 
+}
 
 
 // =========================== #25 |  append VS appendChild | =========================== 
@@ -346,7 +346,7 @@ function addNewLi() {
     // #Similarity
     // services.append(newLi) // will append li>Service !</li
     // services.appendChild(newLi) // also will append li>Service !</li
-    
+
     // ------------------------
 
     // #First difference : append will accept node and string but appCh just accept nodes!
@@ -354,7 +354,7 @@ function addNewLi() {
 
     // services.append('New String') // will append 'Service !' as a child 
     // services.appendChild('New String') // can't append strings! just accept nodes!
-    
+
     // ------------------------
 
     // #Second difference : append will accept many nodes and string but appCh just accept one node!
@@ -364,7 +364,7 @@ function addNewLi() {
     // services.appendChild(newLi , secondNewLi) // will append first and then it breaks!
 
     // ------------------------
-    
+
     // #Third difference : append will not return any value but appCh will return all value
     // exp :
 
@@ -451,7 +451,7 @@ function showLog() {
 
 let btn33 = document.getElementById('btn-33')
 
-btn33.addEventListener('click', function (){
+btn33.addEventListener('click', function () {
     console.log('Clicked by second way');
 })
 
@@ -471,7 +471,7 @@ btn33b.onclick = function () {
 
 let loginForm = document.getElementById('login-form')
 
-loginForm.addEventListener('submit' , function(){
+loginForm.addEventListener('submit', function () {
     console.log('Submitted'); // will log Sumbitted but because of web refresh after click on login button, will desappeared very fast 
 })
 
@@ -480,42 +480,42 @@ loginForm.addEventListener('submit' , function(){
 let btn35 = document.getElementById('btn-35')
 let Inp35 = document.getElementById('inp-35')
 
-Inp35.addEventListener('keydown' , function (e) {
+Inp35.addEventListener('keydown', function (e) {
     console.log(e.keyCode);
-    if (e.key === 'Enter'){
+    if (e.key === 'Enter') {
         console.log("Enter!");
-    } else if (e.keyCode === 65){
+    } else if (e.keyCode === 65) {
         console.log("a, entered!");
     }
 })
 
 
-btn35.addEventListener('click' , function (e) {
+btn35.addEventListener('click', function (e) {
     console.log(e.clientX);
 })
 
 // ================= #36 | preventDefault | ================= 
 
-    // to prevent default event actions same as inputs, a tags and ...
-    // check .cancelable for availablity of preventDef
+// to prevent default event actions same as inputs, a tags and ...
+// check .cancelable for availablity of preventDef
 
-    let login36 = document.getElementById('form-36')
-    let user36 = document.getElementById('user-36')
+let login36 = document.getElementById('form-36')
+let user36 = document.getElementById('user-36')
 
-    login36.addEventListener('submit' , function(e){
-        // e.preventDefault(); // now page will not refresh after submit!
-        console.log(e); 
-    
-    })
+login36.addEventListener('submit', function (e) {
+    // e.preventDefault(); // now page will not refresh after submit!
+    console.log(e);
 
-    user36.addEventListener('keydown' , function(e){
-        if (e.key === 'F12'){
-            e.preventDefault()
-            
-        }
-        console.log(e.key);
-    })
-  
+})
+
+user36.addEventListener('keydown', function (e) {
+    if (e.key === 'F12') {
+        e.preventDefault()
+
+    }
+    console.log(e.key);
+})
+
 
 // ================= #39 | node | ================= 
 
@@ -534,21 +534,21 @@ btn35.addEventListener('click' , function (e) {
 
 //Access to parent node of an element 
 
- // .parentNode 
- // .parentElement
+// .parentNode 
+// .parentElement
 
 
 // =======================
 //   #Siblings Navigation
 // =======================
 
- //Access to previous sibling element node of an element :
+//Access to previous sibling element node of an element :
 
 //  .previousElementSibling.(...)
 
 // --------------------
 
- //Access to next sibling element node of an element :
+//Access to next sibling element node of an element :
 
 //  .nextElementSibling.(...)
 
@@ -556,8 +556,8 @@ btn35.addEventListener('click' , function (e) {
 
 //Access to previous or next sibling of a node : such as text, element, comment or ... :
 
-  // .nextSibling.(...) 
-  // .previousSibling.(...)
+// .nextSibling.(...) 
+// .previousSibling.(...)
 
 
 // =================
@@ -600,10 +600,28 @@ btn35.addEventListener('click' , function (e) {
 // .firstElementChild 
 // .lastElementChild
 
-// ================= #41 | event object | ================= 
+// ================= #43 | remove element from DOM | ================= 
+let $ = document;
+let items43 = $.querySelectorAll(".item43")
 
-// ================= #40 | event object | ================= 
-// ================= #40 | event object | ================= 
+items43.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+        item.parentElement.remove()
+    })
+})
+
+// function to refresh page
+function refreshPage() {
+    window.location.reload();
+}
+
+// ================= #44 |  | =================
+
+// ================= #45 |  | =================
+
+// ================= #46 |  | =================
+
+// ================= #47 |  | =================
 
 
 // --------------------

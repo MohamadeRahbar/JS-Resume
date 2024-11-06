@@ -22,9 +22,16 @@ hr {
     width: 100%;
 }
 
+button, input[type=submit] {
+    cursor: pointer;
+    padding: 2px 5px;
+    margin: 5px 0;
+}
+
 ul li {
     text-align: center;
     padding: 5px;
+    list-style: none;
 }
 
 .red {

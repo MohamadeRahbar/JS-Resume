@@ -205,7 +205,8 @@
 
   <!-- #36 On JS  -->
   <hr>
-  <p>Refresh page, then open clg and type or click on login, F12 on input is prevented!</p>
+  <p>Refresh page, then open clg and type or click on login, F12 on input is prevented and will just log F12, not open
+    or close inspect elm!</p>
   <form id="form-36">
     <div>
       <input type="text" placeholder="Username" id="user-36">
@@ -213,8 +214,28 @@
     <input type="submit" value="Login">
   </form>
 
-  <!-- #3 On JS  -->
+  <!-- #43 On JS  -->
   <hr>
+  <p>By click on each item, related item will remove completelly from DOM, Log it!</p>
+  <ul>
+    <li><a id="43" class="item43" href="#43">First</a></li>
+    <li><a class="item43" href="#43">Second</a></li>
+    <li><a class="item43" href="#43">Third</a></li>
+    <li><a class="item43" href="#43">Fourth</a></li>
+    <li><a class="item43" href="#43">Fifth</a></li>
+    <li><a class="item43" href="#43">Sixth</a></li>
+  </ul>
+  <button type="button" onclick="refreshPage()">Do it again!</button>
+
+  <!-- #43 On JS  -->
+  <hr>
+
+  <!-- #43 On JS  -->
+  <hr>
+
+  <!-- #43 On JS  -->
+  <hr>
+
 
   <script src="./script.js"></script>
 </body>
