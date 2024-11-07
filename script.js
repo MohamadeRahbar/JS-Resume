@@ -615,11 +615,55 @@ function refreshPage() {
     window.location.reload();
 }
 
-// ================= #44 |  | =================
+// ================= #47 | onContextMenu | =================
 
-// ================= #45 |  | =================
+// context-menu = menu that appears upon user interactions such as right click
 
-// ================= #46 |  | =================
+// its about clients right click in DOM
+
+function clickBtn47(e) {
+    console.log("clicked!");
+}
+
+// now is return false and it will not log!
+function cntxtMen() {
+    console.log("Righ Clicked!");
+}
+
+// ================= #48 | clipBoard | =================
+
+let textBox48 = $.getElementById('textBox48')
+
+textBox48.addEventListener("copy", copyHandler)
+textBox48.addEventListener("cut", cutHandler)
+textBox48.addEventListener("paste", pasteHandler)
+
+function copyHandler(ev) {
+    console.log('Visually Copied, But Not in Real :)');
+    ev.preventDefault()
+}
+
+function cutHandler(ev) {
+    console.log('Visually Cuted, But Not in Real :)');
+    ev.preventDefault()
+}
+
+function pasteHandler(ev) {
+    console.log('Visually Pasted, But Not in Real :)');
+    ev.preventDefault()
+}
+
+
+// ================= #49 | pageX and pageY  | =================
+
+let btn49 = $.getElementById('btn49')
+
+btn49.addEventListener('click', clickBtn49)
+
+function clickBtn49(e) {
+    console.log("pageX: " + e.pageX + "\n" + "pageY: " + e.pageY);
+}
+
 
 // ================= #47 |  | =================
 
