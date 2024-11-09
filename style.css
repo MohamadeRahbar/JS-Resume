@@ -6,6 +6,7 @@
 }
 
 body {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e5e5e5;
     display: flex;
@@ -147,4 +148,19 @@ ul li {
     position: absolute;
     top: 60px;
     right: 33%;
+}
+
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: block;
+}
+
+.loaderOff {
+    display: none !important;
 }

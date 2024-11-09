@@ -665,8 +665,36 @@ function clickBtn49(e) {
 }
 
 
-// ================= #47 |  | =================
+// ================= #52 | onLoad Event | =================
 
+// do a function after load whole page such as css and js files and also DOM
+// mostly used for body
+// onLoad="" attr or addEventListener
+// useful for preloaders 
+
+window.addEventListener("load", function () {
+    console.log("Welcome To My JS Resume!" + '\n' + "This Message Will Appeared When Page Loads!" + '\n' + "To Remove It, Just Comment 673th Line Of JS Code")
+})
+
+// ================= #53 |  DOMContentLoaded Event | =================
+
+// simmilar to onLoad
+// but doesn't wait for css and js and will execute immediately when DOM Loaded!
+
+// window.addEventListener("DOMContentLoaded", function () {
+//     console.log("This Message Is Show When DOMContentLoaded " + '\n' + "To Remove It, Just Comment 681th Line Of JS Code")
+// })
+
+// ================= #54 |  | =================
+
+const loader = document.querySelector(".loader")
+
+window.addEventListener("load", function () {
+    // loader.classList.add("loaderOff")
+    loader.className += " loaderOff"
+})
+
+// ================= #53 |  | =================
 
 // --------------------
 
