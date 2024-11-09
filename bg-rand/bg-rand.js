@@ -1,4 +1,4 @@
-setInterval(bgChanger,2000)
+setInterval(bgChanger, 1200)
 
 function bgChanger() {
     let colorR = Math.floor(Math.random() * 256)
@@ -6,5 +6,5 @@ function bgChanger() {
     let colorB = Math.floor(Math.random() * 256)
 
     document.body.style.backgroundColor = `rgb(${colorR} ,${colorG} ,${colorB})`
-    console.log('R= ' + colorR , 'G = ' + colorG , 'B = '+colorB);
+    console.log(`rgb(${colorR},${colorG},${colorB})`);
 }  
