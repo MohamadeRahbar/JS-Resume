@@ -79,7 +79,7 @@ ul li {
 }
 
 #projects {
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,6 @@ ul li {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    /* background-color: #ccc; */
     background-color: #aaa;
     box-shadow: 0 1px 4px 4px #888;
     transition: all 0.18s ease;
