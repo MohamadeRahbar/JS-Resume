@@ -7,22 +7,20 @@
 }
 
 body {
+    width: 100%;
     position: relative;
-    
+    background-color: rgb(133, 173, 125);
 }
 
+
 .context-menu {
-    top: 5rem;
-    left: 20rem;
     position: absolute;
     list-style: none;
     background: #eee;
     border-radius: 0.5rem;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;    
-    /* gap: 0.5rem; */
     padding: 0.199rem;
 }
 
