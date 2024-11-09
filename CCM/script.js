@@ -1,24 +1,20 @@
 const $ = document;
-
 const ccm = $.getElementById("context-menu")
-let x;
-let y;
 
-
-
+// add ccm
 $.addEventListener("contextmenu", function (e) {
     e.preventDefault()
-    x = e.pageX
-    y = e.pageY
-    ccm.style.top = `${y}px`
-    ccm.style.left = `${x}px`
+    ccm.style.top = `${e.pageY}px`
+    ccm.style.left = `${e.pageX}px`
     ccm.style.display = "flex"
 })
 
+// close ccm by click
 $.addEventListener("click", function (e) {
     ccm.style.display = "none"
 })
 
+// close ccm by ESC
 $.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
         ccm.style.display = "none"
