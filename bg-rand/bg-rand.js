@@ -1,4 +1,4 @@
-setInterval(bgChanger, 1200)
+setInterval(bgChanger, 1500)
 
 function bgChanger() {
     let colorR = Math.floor(Math.random() * 256)
