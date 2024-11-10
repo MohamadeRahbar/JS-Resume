@@ -1,4 +1,4 @@
-<h2 align="center">Here is consist of what i learned per each days and some mini-projects!</h2>
+<h2 align="center">Here is what i learned per each days consist of some mini-projects!</h2>
 
 <img align="center" src="./Images/JSProjects.JPG">
 
