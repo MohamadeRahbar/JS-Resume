@@ -3,15 +3,52 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       background-color: #eff;
     }
+
+    button {
+      border: none;
+      border-radius: 0.5rem;
+      background-color: #aaa;
+      box-shadow: 0 1px 4px 4px #888;
+      transition: all 0.18s ease;
+      position: relative;
+    }
+
+    button:hover {
+      background-color: #888;
+      box-shadow: 0 0px 1px 2px #777;
+      color: #000000;
+    }
+
+    button:active {
+      background-color: #555;
+      box-shadow: none;
+    }
+
+    button a {
+      cursor: pointer;
+      display: block;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: #aeffff;
+      text-shadow: 0px 2px 3px #222;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    button:hover a {
+      color: #6bffff;
+    }
+
+    button:active a {
+      color: #00ffff;
+    }
   </style>
-  <title>Learning-JS</title>
+  <title>JS-Basics</title>
 </head>
 
 <body>
@@ -20,6 +57,7 @@
     <h3>If You Want To See My Trainings, Just <a style="padding: 5px;" href="js/script.js">Click Here</a>Or Open Main
       Folder In an IDE as Workspace To Manipulate and Review Codes!</h3>
     <p>Each Part of my <strong>JS Codes</strong> are consist of Notes and Trainings</p>
+    <button><a href="../index.html">JS-Resume</a></button>
   </div>
   <script src="js/script.js"></script>
 </body>
