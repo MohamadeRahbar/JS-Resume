@@ -694,7 +694,40 @@ window.addEventListener("load", function () {
     loader.className += " loaderOff"
 })
 
-// ================= #53 |  | =================
+// ================= #58 | onunload and onbeforeunload event | =================
+
+// very useless events
+
+// onunload occurs when page has unload (close page, click on link or submitting a form)
+
+// onbeforeunload is when page is about to be unload (before unload)
+
+// ================= #59 | removeEventListener | =================
+
+// to prevent event listening
+
+
+
+// ================= #60 | onSelect Event | =================
+
+// useless event
+
+// when user select a text on input or textarea elements will execute function
+
+// ================= #61 | Touch event | =================
+
+// usefull on touchpad screen devices like phone, tablet and etc..
+
+// ontouchstart >> when the user touches on an element (like onkeydown)
+
+// ontouchmove >> simmilar to mousemove (like onkeypress)
+
+// ontouchend >> oposite of ontouchstart, Executes when the user releases the touch (like onkeyup)
+
+// ontouchcancel >> when a touch is interrupted
+
+
+// ================= #62 | Touch event | =================
 
 // --------------------
 
