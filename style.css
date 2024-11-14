@@ -1,200 +1,199 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
 
 body {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e5e5e5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px 0;
-    padding: 50px;
-  }
-
-hr {
-    width: 100%;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px 0;
+  padding: 50px;
 }
 
-button, input[type=submit] {
-    cursor: pointer;
-    padding: 2px 5px;
-    margin: 5px 0;
+hr {
+  width: 100%;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  padding: 2px 5px;
+  margin: 5px 0;
 }
 
 ul li {
-    text-align: center;
-    padding: 5px;
-    list-style: none;
+  text-align: center;
+  padding: 5px;
+  list-style: none;
 }
 
 .red {
-    color: red !important;
+  color: red !important;
 }
 
 .blue {
-    color: blue ;
+  color: blue;
 }
 
 .mb-10 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .mb-30 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-
 .p-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .font-sm {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .font-large {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .under {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #mrAlpha-message {
-    width: 90%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #projects {
-    width: 55%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 30px;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 #projects button {
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    background-color: #aaa;
-    box-shadow: 0 1px 4px 4px #888;
-    transition: all 0.18s ease;
-    position: relative;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #aaa;
+  box-shadow: 0 1px 4px 4px #888;
+  transition: all 0.18s ease;
+  position: relative;
 }
 
 #projects button:hover {
-    background-color: #888;
-    box-shadow: 0 0px 1px 2px #777;
-    color: #000000 ;
+  background-color: #888;
+  box-shadow: 0 0px 1px 2px #777;
+  color: #000000;
 }
 
 #projects button:active {
-    background-color: #555;
-    box-shadow: none;
+  background-color: #555;
+  box-shadow: none;
 }
 
-
 #projects button a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #aeffff;
-    text-shadow: 0px 2px 3px #222;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #aeffff;
+  text-shadow: 0px 2px 3px #222;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #projects button:hover a {
-    color: #6bffff ;
+  color: #6bffff;
 }
 
 #projects button:active a {
-    color: #00ffff ;
+  color: #00ffff;
 }
 
 #JQuery {
-    background-image: url(./Images/logo-jquery.png);
-    background-repeat: no-repeat;
-    background-size: 9vw;
-    background-position: center center;
-    border-radius: 0.5rem;
-    background-attachment: scroll;
-    border: none;
-    cursor: pointer;
-    background-color: #aaa;
-    box-shadow: 0 1px 4px 4px #888;
-    transition: all 0.18s ease-in-out;
+  background-image: url(./Images/logo-jquery.png);
+  background-repeat: no-repeat;
+  background-size: 9vw;
+  background-position: center center;
+  border-radius: 0.5rem;
+  background-attachment: scroll;
+  border: none;
+  cursor: pointer;
+  background-color: #aaa;
+  box-shadow: 0 1px 4px 4px #888;
+  transition: all 0.18s ease-in-out;
 }
 
 #JQuery a {
-    width: 100%;
-    display: block;
-    padding: 1.5rem 6rem;
+  width: 100%;
+  display: block;
+  padding: 1.5rem 6rem;
 }
 
 #JQuery:hover {
-    background-size: 8vw;
-    background-color: #888;
-    box-shadow: 0 0px 1px 2px #777;
+  background-size: 8vw;
+  background-color: #888;
+  box-shadow: 0 0px 1px 2px #777;
 }
 
 #JQuery:active {
-    background-size: 7vw;
-    background-color: #555;
-    box-shadow: none;
+  background-size: 7vw;
+  background-color: #555;
+  box-shadow: none;
 }
 
 .new {
-    border: 2px dashed #ff0 !important;
+  border: 2px dashed #ff0 !important;
 }
 
 .new:hover {
-    border: 2px dashed #aaaa35 !important;
+  border: 2px dashed #aaaa35 !important;
 }
 
 .new:active {
-    border: 2px dotted #444 !important;
+  border: 2px dotted #444 !important;
 }
 
 .new::after {
-    content: 'New!';
-    color: red;
-    position: absolute;
-    top: 60px;
-    right: 33%;
+  content: "New!";
+  color: red;
+  position: absolute;
+  top: 60px;
+  right: 33%;
 }
 
-
 .loader {
-    position: absolute;
-    top: 0;
-    left: 0;   
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 }
 
 .loader img {
-    margin: 15rem;
+  margin: 15rem;
 }
 
 .loaderOff {
-    display: none !important;
+  display: none !important;
 }

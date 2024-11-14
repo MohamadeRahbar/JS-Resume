@@ -3,22 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>JQuery-Traning</title>
+    <title>JQuery-Training</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.rtl.min.css">
 </head>
 
 <body>
+    <!-- greeting sec -->
     <div class="container">
+
         <div class="row">
-            <div class="col-">
-                <p class="text-danger">
-                    Welcome to JQuery-Traning
-                </p>
+            <div class="col-sm-12">
+                <p class="py-2 fs-5 fw-bold text-danger text-center border-bottom" id="Text">
+                    Welcome to JQuery-Training!</p>
             </div>
         </div>
+        <!--  -->
+        <div class="row">
+
+            <div class="col-md-12">
+                <!-- id selector -->
+                <div class="well border bg-light rounded-3 p-2 my-2" id="first">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning w-25" id="button-1">
+                            Id Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- Class selector -->
+                <div class="well border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning btn-block w-25" id="button-2">
+                            Class Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- All (*) selector -->
+                <div class="border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning btn-block w-25" id="button-3">
+                            All (*) Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- att contains selector -->
+                <div class="border bg-light rounded-3 p-2 mb-2" testAttr="firstAttribute">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning btn-block w-25" id="button-4">
+                            Attr Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- att contains word selector -->
+                <div class="border bg-light rounded-3 p-2 mb-2" wordAttr="secAttr">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning btn-block w-25" id="button-5">
+                            Attr contains word Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- att end word selector -->
+                <div class="border bg-light rounded-3 p-2 mb-2" endWord="hello_mohammad">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning btn-block w-25" id="button-6">
+                            Attr End With Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- att equal selector -->
+                <div class="border bg-light rounded-3 p-2 mb-2" equal="ali">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning btn-block w-25" id="button-7">
+                            Attr Equal Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- att start word selector -->
+                <div class="border bg-light rounded-3 p-2 mb-2" startWord="heyAli">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-warning btn-block w-25" id="button-8">
+                            Attr Start With Selector
+                        </a>
+                    </div>
+                </div>
+                <!-- Refresh WebPage -->
+                <div class="border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-info btn-block w-25" id="reload">
+                            Refresh Page
+                        </a>
+                    </div>
+                </div>
+
+
+                <p class="text-dark text-center">
+                    Hiding Items By Different Selectors!
+                </p>
+            </div>
+
+
+        </div>
     </div>
-    <script src="./jquery-3.7.1.min.js"></script>
+
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
+
+
+
+
+
+
+
 
 </html>
