@@ -17,37 +17,41 @@ section {
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15.3rem;
 }
 
 .content {
     background-color: rgba(2, 2, 2, 0.8);
     color: #0ff;
-    padding: 0.5rem;
     border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20vh;
 }
 
 #modal-btn {
     font-size: 1.2rem;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     border: none;
     font-weight: bold;
     border-radius: 0.4rem;
     cursor: pointer;
-    background-color: rgba(83, 253, 253 , 0.3);
+    background-color: rgba(83, 253, 253 , 0.7);
     box-shadow: 0 2px 4px 2px #444;
-    transition: all 0.18s ease;
+    transition: all 0.2s ease;
 }
 #modal-btn:hover {
     background-color: rgba(83, 253, 253 , 0.8);
-    box-shadow: 0 1px 2px 1px #777;
+    box-shadow: 0 0px 3px 3px #999;
  }
 
 #modal-btn:active {
-    background-color: rgba(83, 253, 253 , 0.9);
+    background-color: rgba(83, 253, 253 , 1);
     box-shadow: none;
 }
 
