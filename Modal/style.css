@@ -76,7 +76,7 @@ section {
     overflow: hidden;
 }
 
-.modal-content span {
+#close-modal {
     position: absolute;
     top: 0;
     right: 1vw;
@@ -84,10 +84,10 @@ section {
     transition: all 0.1s ease;
 }
 
-.modal-content span:hover {
+#close-modal:hover {
     text-shadow: 0 2px 3px #777;
 }
 
-.modal-content span:active {
+#close-modal:active {
     scale: 0.8;
 }
