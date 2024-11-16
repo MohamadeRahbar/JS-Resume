@@ -1,30 +1,31 @@
 const $ = document;
 // holders 
-const modal = $.querySelector(".modal-origin")
+const modal = $.getElementById("modal-container")
 const modalBtn = $.getElementById("modal-btn")
 const closeModal = $.querySelector("#close-modal")
-
+const section = $.querySelector("section")
 
 modalBtn.addEventListener("click", function (e) {
-    console.log(e);
-    // TODO
+    modal.style.display = "block"
+    modal.style.transform = "translateY(0vh)"
+    section.style.filter = "blur(15px)"
+})
 
-    //if click, modal-origin d-block
-
-    // add transform : translateY(0)
-
-    // add filter blur to section
+$.addEventListener("load", function () {
 })
 
 
-
-modal.addEventListener("keydown", function (param) {
-    console.log(param);
+$.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        modal.style.transform = "translateY(-101vh)"
+        modal.style.display = "none"
+        section.style.filter = "blur(0)"
+    }
 })
 
 
 closeModal.addEventListener("click", function (param) {
-
-    // TODO
-    // if click, modal-origin d-none
+    modal.style.transform = "translateY(-101vh)"
+    modal.style.display = "none"
+    section.style.filter = "blur(0)"
 })
