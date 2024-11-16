@@ -8,6 +8,7 @@
 
 body {
     background-color: #111;
+    position: relative;
 }
 
 section {
@@ -21,6 +22,8 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 2vh;
+    transition: filter 0.3s ease;
+
 }
 
 .content {
@@ -53,3 +56,37 @@ section {
     box-shadow: none;
 }
 
+
+.modal-origin {
+    background-color: #fff;
+    width: 50vw;
+    z-index: 1;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    border-radius: 0.5rem;
+    transform: translateY(-100vh);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.modal-content {
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.modal-content span {
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.modal-content span:hover {
+    text-shadow: 0 2px 3px #777;
+}
+
+.modal-content span:active {
+    scale: 0.8;
+}
