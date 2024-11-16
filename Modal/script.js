@@ -1,8 +1,6 @@
-// holders 
-
 const $ = document;
-
-modal - btn
+// holders 
+const modal = $.getElementsByClassName("modal - origin")
 
 function openModal() {
     // TODO
@@ -14,9 +12,6 @@ function openModal() {
     // add filter blur to section
 
 }
-
-// display 
-modal - origin
 
 function closeModal() {
     // TODO
