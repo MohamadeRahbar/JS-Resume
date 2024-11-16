@@ -7,25 +7,28 @@ const section = $.querySelector("section")
 
 modalBtn.addEventListener("click", function (e) {
     modal.style.display = "block"
-    modal.style.transform = "translateY(0vh)"
+    setTimeout(() => {
+        modal.classList.add("show");
+    }, 100);
     section.style.filter = "blur(15px)"
-})
-
-$.addEventListener("load", function () {
 })
 
 
 $.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
-        modal.style.transform = "translateY(-101vh)"
-        modal.style.display = "none"
+        modal.classList.remove("show");
+        setTimeout(() => {
+            modal.style.display = "none"
+        }, 200);
         section.style.filter = "blur(0)"
     }
 })
 
 
 closeModal.addEventListener("click", function (param) {
-    modal.style.transform = "translateY(-101vh)"
-    modal.style.display = "none"
+    modal.classList.remove("show");
+    setTimeout(() => {
+        modal.style.display = "none"
+    }, 200);
     section.style.filter = "blur(0)"
 })
