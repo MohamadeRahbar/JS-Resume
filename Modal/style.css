@@ -71,6 +71,13 @@ section {
 
 }
 
+.modal-origin.show {
+    display: block; 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .modal-content {
     padding: 1.5rem;
     overflow: hidden;
