@@ -18,10 +18,9 @@ section {
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    gap: 2vh;
     transition: filter 0.3s ease;
 
 }
@@ -104,4 +103,42 @@ section {
 
 #close-modal:active {
     scale: 0.8;
+}
+
+#return2root {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #aaa;
+    box-shadow: 0 0px 2px 2px #888;
+    transition: all 0.18s ease;
+}
+
+#return2root:hover {
+    background-color: #888;
+    box-shadow: 0 0px 1px 2px #777;
+    color: #000000;
+}
+
+#return2root:active {
+    background-color: #555;
+    box-shadow: none;
+}
+
+#return2root a {
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #d3ffff;
+    text-shadow: 0px 2px 3px #222;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#return2root:hover a {
+    color: #8dffff;
+}
+
+#return2root:active a {
+    color: #00ffff;
 }

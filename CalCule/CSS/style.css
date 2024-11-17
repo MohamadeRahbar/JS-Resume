@@ -10,6 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+  gap: 1vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: linear-gradient(to left , #f7e5c4 , #bbeeee , #f7e5c4);
 }
@@ -231,5 +233,42 @@ button[data-title]:hover::before {
   transition: opacity 0.2s ease-in-out; 
 }
 
+#return2root {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #aaa;
+  box-shadow: 0 0px 2px 2px #888;
+  transition: all 0.18s ease;
+}
+
+#return2root:hover {
+  background-color: #888;
+  box-shadow: 0 0px 1px 2px #777;
+  color: #000000;
+}
+
+#return2root:active {
+  background-color: #555;
+  box-shadow: none;
+}
+
+#return2root a {
+  cursor: pointer;
+  display: block;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  color: #d3ffff;
+  text-shadow: 0px 2px 3px #222;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#return2root:hover a {
+  color: #8dffff;
+}
+
+#return2root:active a {
+  color: #00ffff;
+}
 
 /* by MRAlpha || https://github.com/MohamadeRahbar  */

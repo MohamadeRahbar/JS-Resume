@@ -1,21 +1,10 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5vh;
-    height: 100vh;
-    transition: background-color 0.3s ease;
-}
-
-
-.centered-text {
-    text-align: center;
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    color: #fff;
-    background-color: rgba(2, 2, 2, 0.3);
+    gap: 0.5rem;
+    padding: 0.5rem;
 }
 
 #return2root {
@@ -25,7 +14,7 @@ body {
     box-shadow: 0 0px 2px 2px #888;
     transition: all 0.18s ease;
     
-}
+  }
 
 #return2root:hover {
     background-color: #888;
