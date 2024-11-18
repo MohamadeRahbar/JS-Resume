@@ -65,7 +65,8 @@ body {
     transition: all 0.18s ease;
     position: fixed;
     top: 60vh;
-    left: 50vw;
+    left: 47vw;
+    right: 48vw;
 }
 
 #return2root:hover {
