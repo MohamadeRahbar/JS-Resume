@@ -88,7 +88,7 @@ ul li {
   margin-bottom: 30px;
 }
 
-#projects button {
+.global-btn {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -98,18 +98,18 @@ ul li {
   position: relative;
 }
 
-#projects button:hover {
+.global-btn:hover {
   background-color: #888;
   box-shadow: 0 0px 1px 2px #777;
   color: #000000;
 }
 
-#projects button:active {
+.global-btn:active {
   background-color: #555;
   box-shadow: none;
 }
 
-#projects button a {
+.global-btn a {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -121,11 +121,11 @@ ul li {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#projects button:hover a {
+.global-btn:hover a {
   color: #6bffff;
 }
 
-#projects button:active a {
+.global-btn:active a {
   color: #00ffff;
 }
 
@@ -196,4 +196,28 @@ ul li {
 
 .loaderOff {
   display: none !important;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 2vh;
+  left: 2vw;
+  background-color: rgba(22, 22, 22, 0.8);
+}
+
+.fixed a {
+  color: #aaa;
+}
+
+.fixed:hover {
+  background-color: rgba(22, 22, 22, 0.9);}
+
+.fixed:active {
+  background-color: rgb(22, 22, 22);
+}
+
+@media screen and (max-width: 768px) {
+  .fixed {
+    display: none ;
+  }
 }
