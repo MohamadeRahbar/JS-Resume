@@ -218,6 +218,6 @@ ul li {
 
 @media screen and (max-width: 768px) {
   .fixed {
-    display: none ;
+    display: none !important;
   }
 }
