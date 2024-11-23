@@ -18,7 +18,7 @@ section {
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     transition: filter 0.3s ease;
@@ -81,6 +81,14 @@ section {
     visibility: visible;
     transform: translateY(0);
     overflow: auto;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .modal-content {
