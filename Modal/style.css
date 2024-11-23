@@ -80,11 +80,11 @@ section {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    overflow: auto;
 }
 
 .modal-content {
     padding: 2rem;
-    overflow: hidden;
     text-align: justify;
 }
 
