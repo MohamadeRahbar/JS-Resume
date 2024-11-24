@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     justify-content: center;
@@ -5,6 +6,17 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     padding: 0.5rem;
+    position: relative;
+}
+
+#Text {
+    position: fixed;
+    top: 1vh;
+    left: 35vw;
+    right: 35vw;
+    background-color: rgba(22, 22, 22, 0.5);
+    color: #00ffff ;
+    border-radius: 0.5rem;
 }
 
 #return2root {
@@ -30,7 +42,7 @@ body {
 #return2root a {
     cursor: pointer;
     display: block;
-    padding: 0.5rem;
+    padding: 0.2rem 0.5rem ;
     text-decoration: none;
     color: #d3ffff;
     text-shadow: 0px 2px 3px #222;

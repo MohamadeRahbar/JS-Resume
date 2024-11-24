@@ -14,8 +14,8 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-sm-12">
-                <p class="py-2 fs-5 fw-bold text-danger text-center border-bottom" id="Text">
+            <div class="col-sm-12 text-center">
+                <p class="py-2 fs-5 fw-bold" id="Text">
                     Welcome to JQuery-Training!</p>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="col-md-12">
                 <!-- id selector -->
                 <div class="well border bg-light rounded-3 p-2 my-2" id="first">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning w-25" id="button-1">
                             Id Selector
                         </a>
@@ -33,7 +33,7 @@
                 </div>
                 <!-- Class selector -->
                 <div class="well border bg-light rounded-3 p-2 mb-2">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning btn-block w-25" id="button-2">
                             Class Selector
                         </a>
@@ -41,7 +41,7 @@
                 </div>
                 <!-- All (*) selector -->
                 <div class="border bg-light rounded-3 p-2 mb-2">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning btn-block w-25" id="button-3">
                             All (*) Selector
                         </a>
@@ -49,7 +49,7 @@
                 </div>
                 <!-- att contains selector -->
                 <div class="border bg-light rounded-3 p-2 mb-2" testAttr="firstAttribute">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning btn-block w-25" id="button-4">
                             Attr Selector
                         </a>
@@ -57,7 +57,7 @@
                 </div>
                 <!-- att contains word selector -->
                 <div class="border bg-light rounded-3 p-2 mb-2" wordAttr="secAttr">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning btn-block w-25" id="button-5">
                             Attr contains word Selector
                         </a>
@@ -65,7 +65,7 @@
                 </div>
                 <!-- att end word selector -->
                 <div class="border bg-light rounded-3 p-2 mb-2" endWord="hello_mohammad">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning btn-block w-25" id="button-6">
                             Attr End With Selector
                         </a>
@@ -73,7 +73,7 @@
                 </div>
                 <!-- att equal selector -->
                 <div class="border bg-light rounded-3 p-2 mb-2" equal="ali">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning btn-block w-25" id="button-7">
                             Attr Equal Selector
                         </a>
@@ -81,43 +81,144 @@
                 </div>
                 <!-- att start word selector -->
                 <div class="border bg-light rounded-3 p-2 mb-2" startWord="heyAli">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12">
                         <a class="btn btn-warning btn-block w-25" id="button-8">
                             Attr Start With Selector
                         </a>
                     </div>
                 </div>
-                <!-- Refresh WebPage -->
-                <div class="border bg-light rounded-3 p-2 mb-2">
-                    <div class="col-md-12 text-center">
-                        <a class="btn btn-info btn-block w-25" id="reload">
-                            Refresh Page
+                <!-- btn selector -->
+                <div class="d-flex align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-9">
+                            Button Selector
                         </a>
+                    </div>
+                    <div class="col-9 text-start">
+                        <input type="button" value="input button">
+                        <button> button</button>
+
+                    </div>
+                </div>
+                <!-- check-box selector -->
+                <div class="d-flex align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-10">
+                            Checkbox Selector
+                        </a>
+                    </div>
+                    <div class="col-9 text-start">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <!-- parent > child selector -->
+                <div class="d-flex align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-11">
+                            Parent > Child Selector
+                        </a>
+                    </div>
+                    <div class="col-9 text-start" id="parent">
+                        <p>first paragraph</p>
+                        <p>second paragraph</p>
+                        <p>third paragraph</p>
+                        <p>fourth paragraph</p>
+                        <span>this will not remove! because its not a (p)</span>
+                    </div>
+                </div>
+                <!-- Contains selector -->
+                <div class="d-flex align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-12">
+                            Inner Text Contains Selector
+                        </a>
+                    </div>
+                    <div class="col-9 text-start" id="anotherParent">
+                        hey dude
+                    </div>
+                </div>
+                <!-- descendant selector -->
+                <div class="d-flex align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-13">
+                            descendant Selector
+                        </a>
+                    </div>
+                    <div class="col-9 text-start" id="descendantID">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <div>
+                            <p>5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- disabled selector -->
+                <div class="d-flex align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-14">
+                            disabled Selector
+                        </a>
+                    </div>
+                    <div class="col-9 text-start" id="desInp">
+                        <input type="button" value="disabled" disabled>
+                        <input type="button" value="not-disabled">
+
+                    </div>
+                </div>
+                <!-- enabled selector -->
+                <div class="d-flex align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-15">
+                            enabled Selector
+                        </a>
+                    </div>
+                    <div class="col-9 text-start" id="enInp">
+                        <input type="button" value="disabled" disabled>
+                        <input type="button" value="enabled">
+
+                    </div>
+                </div>
+                <!-- empty selector -->
+                <div class="d-flex gap-5 align-items-center border bg-light rounded-3 p-2 mb-2">
+                    <div class="col-3 text-start">
+                        <a class="btn btn-warning btn-block w-100" id="button-16">
+                            empty Selector
+                        </a>
+                    </div>
+                    <div class="col-9 text-start" id="emptySelc">
+                        <div class="p-1 bg-danger w-75"></div>
                     </div>
                 </div>
 
 
-                <p class="text-dark text-center">
-                    Hiding Items By Different Selectors!
-                </p>
+
+
+
+
+
             </div>
-
-
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-md-12 ">
+            <!-- Refresh WebPage -->
+            <p class="text-dark text-center">
+                Hiding Items By Different Selectors!
+            </p>
+            <div class="col-md-12 text-center ">
+                <a class="btn btn-info btn-block " id="reload">
+                    Refresh Page
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- return btn -->
     <button id="return2root"><a href="../index.html">Back</a></b>
 
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/script.js"></script>
 </body>
-
-
-
-
-
-
-
-
 
 </html>
