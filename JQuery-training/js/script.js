@@ -85,7 +85,7 @@ $("#button-13").click(function () {
 })
 
 $("#button-14").click(function () {
-    $("#desInp input:disabled").fadeOut(500) // based on css selectors >> :
+    $("#desInp input:disabled").fadeOut(500) // based on css selectors >> :disabled/enabled
 })
 
 $("#button-15").click(function () {
@@ -93,7 +93,35 @@ $("#button-15").click(function () {
 })
 
 $("#button-16").click(function () {
-    $("#emptySelc :empty").fadeOut(500)
+    $("#emptySelector :empty").fadeOut(500) // inner empty value 
+})
+
+$("#button-17").click(function () {
+    $("#indexSelector p:eq(2)").fadeOut(500) // will remove  p with index of 2
+})
+
+$("#button-18").click(function () {
+    $("#evenSelector p:even").fadeOut(500) // will remove  elements with even index 
+})
+
+$("#button-19").click(function () {
+    $("#fileSelector :file").fadeOut(500) // input with file type will selected
+})
+
+$("#button-20").click(function () {
+    $("#childSelector p:first-child").fadeOut(500) // will select first child of p elems
+})
+
+$("#button-21").click(function () {
+    $("#firstType p:first-of-type").fadeOut(500) // will select first element with type of p at each sub parent
+})
+
+$("#button-22").click(function () {
+    $("#firstSel p:first").fadeOut(500) // will select first p in children
+})
+
+$("#button-23").click(function () {
+    $("#greaterThan p:gt(1)").fadeOut(500) // will select all children after index 1
 })
 
 
