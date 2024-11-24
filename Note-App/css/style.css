@@ -7,6 +7,7 @@
 
 body {
   color: var(--white-color);
+  background-color: #ededed;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0px;
@@ -149,7 +150,11 @@ section:nth-of-type(2) {
 /* FIXED LIST OF COLORS */
 #color-select {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
   padding: 5px 10px 0 0;
+  
 }
 
 .color-box {
@@ -158,4 +163,5 @@ section:nth-of-type(2) {
   height: 18px;
   width: 18px;
   margin-left: 5px;
+  cursor: pointer;
 }
