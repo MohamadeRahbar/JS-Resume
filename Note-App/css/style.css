@@ -128,6 +128,7 @@ section:nth-of-type(2) {
   }
 }
 
+
 /* ITEM */
 
 .within-list {
@@ -141,10 +142,6 @@ section:nth-of-type(2) {
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
-}
-
-#listed:nth-child(odd):hover {
-  cursor: pointer;
 }
 
 /* FIXED LIST OF COLORS */
@@ -162,6 +159,20 @@ section:nth-of-type(2) {
   border-radius: 50%;
   height: 18px;
   width: 18px;
+  margin: 5px 0;
   margin-left: 5px;
   cursor: pointer;
 }
+#input-field {
+  transition: outline 0.3s ease;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.redAlert {
+  outline: 1px solid red !important;
+
+}
+
