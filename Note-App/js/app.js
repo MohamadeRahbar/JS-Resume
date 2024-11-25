@@ -30,8 +30,6 @@ function createNote() {
             newDiv.remove()
         })
 
-
-
     } else {
         UI.input.classList.add("redAlert")
         setTimeout(function () {
