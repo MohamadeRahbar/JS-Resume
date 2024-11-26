@@ -729,13 +729,20 @@ window.addEventListener("load", function () {
 
 // ================= #70 | onScroll event | =================
 
-// client scrolls can be managed and will return useful data
+// runs when user do scroll
+
+// client scrolls can be controlled and will return useful data
 
 // 3 way to use :
 
-// html property, event listener and direct js attribute
+// html attribute, event listener and direct inline js
 
-// sticky notes and navbar, back to top, ads and ...
+// sticky navbar, back to top, ads, progress bar and ...
+
+// .documentElement.scrollTop (y) // .documentElement.scrollLeft (x)
+
+// start point : scrollTop >> 0 |  end point: max height
+
 
 // --------------------
 
