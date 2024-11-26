@@ -678,7 +678,7 @@ window.addEventListener("load", function () {
 
 // ================= #53 |  DOMContentLoaded Event | =================
 
-// simmilar to onLoad
+// similar to onLoad
 // but doesn't wait for css and js and will execute immediately when DOM Loaded!
 
 // window.addEventListener("DOMContentLoaded", function () {
@@ -716,18 +716,26 @@ window.addEventListener("load", function () {
 
 // ================= #61 | Touch event | =================
 
-// usefull on touchpad screen devices like phone, tablet and etc..
+// useful on touchpad screen devices like phone, tablet and etc..
 
 // ontouchstart >> when the user touches on an element (like onkeydown)
 
-// ontouchmove >> simmilar to mousemove (like onkeypress)
+// ontouchmove >> similar to mousemove (like onkeypress)
 
-// ontouchend >> oposite of ontouchstart, Executes when the user releases the touch (like onkeyup)
+// ontouchend >> opposite of ontouchstart, Executes when the user releases the touch (like onkeyup)
 
 // ontouchcancel >> when a touch is interrupted
 
 
-// ================= #62 | Touch event | =================
+// ================= #70 | onScroll event | =================
+
+// client scrolls can be managed and will return useful data
+
+// 3 way to use :
+
+// html property, event listener and direct js attribute
+
+// sticky notes and navbar, back to top, ads and ...
 
 // --------------------
 
