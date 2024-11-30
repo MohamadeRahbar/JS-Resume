@@ -1,7 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --tmp: #ec6a2a;
     --tmp-bg: #1c2433;
     --ft-color: #7f899b;
     --cpy-right-color: #98a5b9;
     --cpy-right-bg: #212a39;
+}
+
+body {
+    font-family:  sans-serif;
 }
