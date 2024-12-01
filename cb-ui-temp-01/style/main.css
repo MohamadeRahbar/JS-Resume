@@ -69,6 +69,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    .a-navbar {
+        justify-content: start;
+        padding-top: 5px ;
+        padding-bottom: 5px ;
+    }
+
     .a-navbar .menuger {
         display: block; 
     }
