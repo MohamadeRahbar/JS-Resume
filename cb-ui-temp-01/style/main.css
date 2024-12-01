@@ -9,6 +9,11 @@
     src: url(../fonts/Yekan.ttf);
 }
 
+p {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
 :root {
     --tmp: #ec6a2a;
     --tmp-bg: #1c2433;
@@ -142,4 +147,60 @@ body {
 
 .mega-wrapper .mega-sub:first-child   {
     border-right: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-sections {
+    background-color: var(--tmp-bg);
+}
+
+.footer-sections h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-cpy {
+    background-color: var(--cpy-right-bg);
+    color: var(--cpy-right-color);
+}
+
+.footer-cpy a {
+    text-decoration: none;
+    color: var(--cpy-right-color);
+    transition: all 0.3s;
+}
+
+.footer-cpy a:hover {
+    color: #fff;
+}
+
+footer .navigation {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+}
+
+footer .navigation li a {
+    display: block;
+    padding: 15px 0;
 }
