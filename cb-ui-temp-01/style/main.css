@@ -1,8 +1,14 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/Vazir.woff);
+    src: url(../fonts/Vazir.woff2);
 }
+
+@font-face {
+    font-family: yekan;
+    src: url(../fonts/Yekan.ttf);
+}
+
 
 :root {
     --tmp: #ec6a2a;
@@ -13,5 +19,79 @@
 }
 
 body {
-    font-family:  sans-serif;
+    font-family: vazir, Arial, sans-serif;
+}
+.a-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 10vw;
+    position: relative;
+}
+
+.a-navbar .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.a-navbar .menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.a-navbar .menu li a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-size: 16px;
+    padding: 15px;
+    transition: color 0.3s;
+}
+
+.a-navbar .menu li a:hover {
+    color: #ff6600;
+}
+
+.a-navbar .menu li ul {
+    opacity: 0;
+    transition: all 0.3s;
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.a-navbar .menu li ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 35px;
+    transition: background-color 0.3s;
+}
+
+.a-navbar .menu li ul li a:hover {
+    background-color: #575757;
+}
+
+.a-navbar .menu li:hover ul {
+    opacity: 1;
+}
+
+.a-navbar .menu li:hover ul:hover {
+    display: block;
+}
+
+.logo {
+    
 }
