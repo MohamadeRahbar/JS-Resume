@@ -74,8 +74,8 @@ body {
     }
 
     .a-navbar .menu {
-        opacity: 0;
         visibility: hidden;
+        opacity: 0;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -88,11 +88,12 @@ body {
     }
 
     .a-navbar .menu.active {
-        opacity: 1;
         visibility: visible;
+        opacity: 1;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        
     }
     
     .a-navbar .menu li a {
