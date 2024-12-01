@@ -11,3 +11,12 @@ $.addEventListener('scroll', function () {
         navbar.classList.remove('fixed');
     }
 });
+
+$.addEventListener("DOMContentLoaded", function () {
+    const hamburgerMenu = document.querySelector(".menuger");
+    const menu = document.querySelector(".a-navbar .menu");
+
+    hamburgerMenu.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});

@@ -27,6 +27,7 @@ ul {
 }
 
 body {
+
     font-family: vazir, Arial, sans-serif;
 }
 .a-navbar {
@@ -37,11 +38,9 @@ body {
     padding: 0 10vw;
     position: relative;
     transition: all 0.25s;
-    margin: 10px 0;
 }
 
 .a-navbar.fixed {
-    margin: 0;
     position: fixed; 
     top: 0;
     left: 0;
@@ -51,10 +50,57 @@ body {
 }
 
 .a-navbar.fixed img {
-    width: 120px;
-    height: 28px;
+    width: 115px;
+    height: 25px;
     transition: all 0.3s;
 }
+
+/* hamburger menu by mrAlpha */
+.a-navbar .menuger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .a-navbar .menuger {
+        display: block; 
+    }
+
+    .a-navbar .menu {
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        transition: all 0.3s;
+    }
+
+    .a-navbar .menu.active {
+        opacity: 1;
+        visibility: visible;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .a-navbar .menu li a {
+        padding: 10px 20px;
+    }
+
+    .a-navbar .menu .logo {
+        display: none;
+    }
+}
+
 
 .a-navbar .menu {
     display: flex;
@@ -79,6 +125,7 @@ body {
     font-size: 16px;
     padding: 15px;
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 .a-navbar .menu li a:hover {
