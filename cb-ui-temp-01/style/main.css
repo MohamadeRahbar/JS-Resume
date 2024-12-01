@@ -9,7 +9,6 @@
     src: url(../fonts/Yekan.ttf);
 }
 
-
 :root {
     --tmp: #ec6a2a;
     --tmp-bg: #1c2433;
@@ -26,27 +25,45 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 0 10vw;
     position: relative;
+    transition: all 0.25s;
+    margin: 10px 0;
+}
+
+.a-navbar.fixed {
+    margin: 0;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.a-navbar.fixed img {
+    width: 120px;
+    height: 28px;
+    transition: all 0.3s;
 }
 
 .a-navbar .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0 10px;
     list-style: none;
     margin: 0;
+    gap: 10px;
     padding: 0;
 }
+
 
 .a-navbar .menu li {
     position: relative;
     margin: 0 15px;
 }
 
-.a-navbar .menu li a {
+.a-navbar .menu > li > a {
     text-decoration: none;
     display: block;
     color: #333;
@@ -59,39 +76,70 @@ body {
     color: #ff6600;
 }
 
-.a-navbar .menu li ul {
+.a-navbar .menu li .sub-menu {
+    visibility: hidden; 
     opacity: 0;
     transition: all 0.3s;
     white-space: nowrap;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #333;
+    background-color: #2e2e2e;
     list-style: none;
     padding: 10px 0;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 .a-navbar .menu li ul li a {
-    display: inline-block;
-    color: #fff;
-    padding: 5px 35px;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    display: block;
+    color: #bababa;
+    padding: 10px 35px;
+    padding-right: 0;
+    transition: color 0.3s;
+    text-align: right;
 }
 
 .a-navbar .menu li ul li a:hover {
-    background-color: #575757;
+    color: #fff;
+
 }
 
 .a-navbar .menu li:hover ul {
+    visibility: visible;
     opacity: 1;
 }
 
-.a-navbar .menu li:hover ul:hover {
-    display: block;
+.a-navbar .menu li:hover .mega-wrapper {
+    visibility: visible;
+    opacity: 1;
 }
 
-.logo {
+.menu .mega-wrapper {
+    visibility: hidden; 
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: red;
+    border-radius: 5px;
+    transition: all 0.3s;
+    background-color: #2e2e2e;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mega-wrapper .mega-sub {
+    white-space: nowrap;
+    list-style: none;
+    padding: 10px 0;
+    border-right: 1px solid #222;
     
+}
+
+.mega-wrapper .mega-sub:first-child   {
+    border-right: none;
 }
