@@ -2,7 +2,6 @@
 const $ = document
 const navbar = document.querySelector('.a-navbar');
 $.addEventListener('scroll', function () {
-    console.log("scroll");
     if ($.documentElement.scrollTop > 0) {
         navbar.classList.add('fixed');
     } else {
@@ -20,64 +19,60 @@ $.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 // slider
 const slider = {
     ui: $.querySelector('#a-slider'),
-    slides: $.querySelectorAll('#slide'),
+    slides: $.querySelectorAll('.slide'),
     prevBtn: $.querySelector('.prev-btn'),
     nxtBtn: $.querySelector('.next-btn')
 }
 let currentIndex = 0;
 let isMouseInside = false;
 
-// // show specific slide
-// function showSlide(index) {
-//     slides.forEach((slide, i) => {
-//         slide.classList.remove('active', 'previous', 'next');
-//         if (i === index) {
-//             slide.classList.add('active');
-//         } else if (i === (index - 1 + slides.length) % slides.length) {
-//             slide.classList.add('previous');
-//         } else if (i === (index + 1) % slides.length) {
-//             slide.classList.add('next');
-//         }
-//     });
-// }
+// set flag for check mouse position
+slider.ui.addEventListener('mouseenter', () => {
+    isMouseInside = true;
+});
 
-// // click on prev btn
-// prevBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-//     showSlide(currentIndex);
-// });
+slider.ui.addEventListener('mouseleave', () => {
+    isMouseInside = false;
+});
 
-// //  click on next btn
-// nextBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex + 1) % slides.length;
-//     showSlide(currentIndex);
-// });
+// event for next button
+slider.nxtBtn.addEventListener('click', nextSlide);
 
-// // flag for keyboard event
-// slider.addEventListener('mouseenter', () => {
-//     isMouseOverSlider = true;
-// });
+// event for prev button
+slider.prevBtn.addEventListener('click', prevSlide);
 
-// slider.addEventListener('mouseleave', () => {
-//     isMouseOverSlider = false;
-// });
+// keyboard event with flag checking
+$.addEventListener('keydown', function (event) {
+    if (isMouseInside) {
+        if (event.key === 'ArrowRight') {
+            nextSlide();
+        } else if (event.key === 'ArrowLeft') {
+            prevSlide();
+        }
+    }
+});
 
-// // check flag and then keyboard event
-// document.addEventListener('keydown', (event) => {
-//     if (isMouseOverSlider) {
-//         if (event.key === 'ArrowRight') {
-//             currentIndex = (currentIndex + 1) % slides.length;
-//             showSlide(currentIndex);
-//         } else if (event.key === 'ArrowLeft') {
-//             currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-//             showSlide(currentIndex);
-//         }
-//     }
-// });
+// move to the next slide
+function nextSlide() {
+    const totalSlides = slider.slides.length;
 
-// // show default slide
-// showSlide(currentIndex);
+    slider.slides[currentIndex].classList.remove('active');
+
+    currentIndex = (currentIndex + 1) % totalSlides;
+    console.log("next" + currentIndex);
+    slider.slides[currentIndex].classList.add('active');
+}
+
+// move to the previous slide
+function prevSlide() {
+    const totalSlides = slider.slides.length;
+
+    slider.slides[currentIndex].classList.remove('active');
+
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    console.log("prev" + currentIndex);
+    slider.slides[currentIndex].classList.add('active');
+}

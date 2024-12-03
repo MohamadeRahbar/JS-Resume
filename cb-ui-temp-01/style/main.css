@@ -40,7 +40,8 @@ body {
     background-color: #fff;
     padding: 0 10vw;
     position: relative;
-    transition: all 0.25s;
+    z-index: 1000;
+    transition: all 0.6s ease;
 }
 
 .a-navbar.fixed {
@@ -48,14 +49,19 @@ body {
     top: 0;
     left: 0;
     width: 100%; 
-    z-index: 1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
+.a-navbar img {
+    transition: all 0.3s ease;
+
+}
+
 .a-navbar.fixed img {
-    width: 115px;
-    height: 25px;
-    transition: all 0.3s;
+    width: 115px; 
+    height: 25px; 
+    scale: 1.1;
+    transition: all 0.3s ease;
 }
 
 /* hamburger menu by mrAlpha */
@@ -125,6 +131,7 @@ body {
 .a-navbar .menu li {
     position: relative;
     margin: 0 15px;
+    z-index: 999;
 }
 
 .a-navbar .menu > li > a {
@@ -154,6 +161,7 @@ body {
     padding: 10px 0;
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    
 }
 
 
@@ -213,10 +221,8 @@ body {
 
 #a-slider {
     padding: 10px;
-    margin: 10px 0;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
-    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
 }
@@ -224,12 +230,12 @@ body {
 
   */
 .slide {
-    position: relative;
+    display: none;
     top: 0;
     left: 100%;
     width: 100%; 
-    opacity: 0; 
     transition: all 0.6s ease; 
+    
 }
 
 .slide img {
@@ -239,74 +245,97 @@ body {
 }
 
 .slide.active {
+    display: block;
+    position: relative;
     left: 0; 
-    opacity: 1; 
-    z-index: 0;
+    z-index: 1;
 }
 
 .slide.previous {
+    display: block;
     left: -100%;
     opacity: 0;
-    z-index: 5;
 }
 
 .slide.next {
+    display: block;
     left: 100%; 
-    opacity: 0;
-    z-index: 5;
 }
 
 .nav-btn {
     position: absolute;
     top: 50%; 
+    transition: all 0.2s;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 1.5rem;
     width: 40px;
     height: 40px;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border-radius: 50%; 
-    z-index: 20;
+    z-index: 10;
 }
 
 .nav-btn:hover {
+    
     background: rgba(0, 0, 0, 0.7);
+}
 
+.nav-btn:active {
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .prev-btn {
-    left: 10px;
+    /* content: "<"; */
+    left: 40px;
 }
 
 .next-btn {
-    right: 10px;
+    /* content: ">"; */
+    right: 40px;
+}
+
+.slider-overlay  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 .content {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6); 
-    color: #fff;
     text-align: center;
     padding: 10px 20px;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
 }
 
 .content h2 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.content .author::after {
+    content: " ";
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    margin: 0 10px 4px;
+    width: 12px;
 }
 
 .content .date,
 .content .author {
+    display: inline-block;
     font-size: 0.9rem;
-    margin: 5px 0;
 }
 
 /* feed & side-bar */
