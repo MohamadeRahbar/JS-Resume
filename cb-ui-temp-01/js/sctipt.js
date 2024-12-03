@@ -1,4 +1,6 @@
-// onScroll Menu 
+/* 
+============= fixed nav =======================
+*/
 const $ = document
 const navbar = document.querySelector('.a-navbar');
 $.addEventListener('scroll', function () {
@@ -9,7 +11,9 @@ $.addEventListener('scroll', function () {
     }
 });
 
-// menuger of nav
+/* 
+============= menuger of nav =======================
+*/
 $.addEventListener("DOMContentLoaded", function () {
     const hamburgerMenu = document.querySelector(".menuger");
     const menu = document.querySelector(".a-navbar .menu");
@@ -19,7 +23,9 @@ $.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// slider
+/* 
+============= slider =======================
+*/
 const slider = {
     ui: $.querySelector('#a-slider'),
     slides: $.querySelectorAll('.slide'),
@@ -63,6 +69,7 @@ function nextSlide() {
 
     currentIndex = (currentIndex + 1) % totalSlides;
     console.log("next" + currentIndex);
+
     slider.slides[currentIndex].classList.add('active');
 }
 
@@ -74,5 +81,10 @@ function prevSlide() {
 
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     console.log("prev" + currentIndex);
+
     slider.slides[currentIndex].classList.add('active');
 }
+
+/* 
+=============  =======================
+*/
