@@ -314,9 +314,9 @@ feed & side-bar
 .fc-social::after {
     content: " ";
     display: inline-block;
-    border-bottom: 2px dashed #8b8b8b;
+    border-bottom: 1px dashed #8b8b8b;
     margin: 10px 0;
-    width: 100%;
+    width: 30%;
 }
 
 
