@@ -215,11 +215,114 @@ body {
     font-size: 0.9rem;
 }
 
-/* feed & side-bar */
+/* 
+==================
+feed & side-bar
+==================
+ */
+
+.feed-ui {
+    position: relative;
+}
+
+.like-btn {
+    position: absolute;
+    bottom: -5%;
+    left: -3%;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.like-btn span {
+    display: block;
+    padding: 10px;
+    margin: auto auto;
+}
+
+.like-btn:hover {
+    color: #ff5500;
+    text-shadow: 0 2px 2px #fff;
+    background-color: #bababa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.like-btn:active {
+    color: #ff5500;
+    text-shadow: 0 2px 2px #fff;
+    background-color: #999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.like-btn span::before {
+    display: block;
+    font-family: FontAwesome;
+    content: "\f08a";
+}
+
+.like-btn:active span::before {
+    content: "\f004";
+    color: red;
+    
+}
+
+.like-btn:active span::before {
+    content: "\f004";
+    color: red;
+    
+}
+
+.like-btn.liked span {
+    content: "\f004" !important;
+}
+
+.mr-line:after {
+    content: " ";
+    display: inline-block;
+    border-bottom: 2px solid #ec6a2a;
+    margin: 0 10px 4px;
+    width: 12px;
+    
+}
+
+.fc-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-item a , i {
+    transition: all 0.3 ease;
+}
+
+.feed-item a:hover {
+    color: #ec6a2a; 
+}
+
+.feed-item a:active {
+    color: #ff3300; 
+}
+
+.fc-social a i {
+    font-size: 1.2rem;
+
+}
+
+.fc-social::after {
+    content: " ";
+    display: inline-block;
+    border-bottom: 2px dashed #8b8b8b;
+    margin: 10px 0;
+    width: 100%;
+}
 
 
-
-
+.blog-content {
+    text-align: justify;
+}
 
 
 
