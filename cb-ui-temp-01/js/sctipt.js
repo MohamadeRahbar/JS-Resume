@@ -4,15 +4,16 @@
 const $ = document;
 const navbar = document.querySelector('.a-navbar');
 $.addEventListener('scroll', function () {
-    if ($.documentElement.scrollTop > 85 && $.documentElement.scrollTop < 250) {
+    if ($.documentElement.scrollTop > 100 && $.documentElement.scrollTop < 250) {
         navbar.classList.add('prefixed');
 
     } else if ($.documentElement.scrollTop >= 250) {
         navbar.classList.add('fixed');
+        navbar.classList.remove('prefixed');
 
     } else {
-        navbar.classList.remove('prefixed');
         navbar.classList.remove('fixed');
+        navbar.classList.remove('prefixed');
     }
 });
 

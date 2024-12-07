@@ -43,11 +43,13 @@ body {
     padding: 1vh 10vw;
     position: relative;
     z-index: 1000;
+    transition: all 0.5s ease;
 }
 
 .a-navbar.prefixed {
     visibility: hidden;
     height: 0;
+
 }
  
 .a-navbar.fixed {
@@ -58,7 +60,6 @@ body {
     width: 100%; 
     top: 0;
     left: 0;
-    transition: all 0.5s ease;
 }
 
 .menu-sm .logo-sm img {
@@ -82,102 +83,138 @@ body {
     align-items: center;
     list-style: none;
     margin: 0;
-    gap: 10px;
+    gap: 40px;
     padding: 0;
-}
-
-
-.a-navbar .menu li {
-    position: relative;
-    margin: 0 15px;
-    z-index: 60;
 }
 
 .a-navbar .menu > li > a {
     text-decoration: none;
     display: block;
-    color: #333;
+    color: #aaa;
     font-size: 16px;
+    font-weight: bold;
     padding: 15px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
     white-space: nowrap;
+    position: relative;
 }
 
 .a-navbar .menu li a:hover {
-    color: #ff6600;
+    color: #222;
 }
 
-.a-navbar .menu li .sub-menu {
+ li .sub-menu {
     visibility: hidden; 
     opacity: 0;
-    transition: all 0.3s;
-    white-space: nowrap;
+    transition: all 0.3s ease;
     position: absolute;
     top: 100%;
-    right: 0;
     background-color: #2e2e2e;
     list-style: none;
-    padding: 10px 0;
-    border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     
 }
 
+.a-navbar .menu li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
 
-.a-navbar .menu li ul li a {
+
+.sub-menu  a , .mega-sub-menu a {
     text-decoration: none;
     display: block;
     color: #bababa;
-    padding: 10px 35px;
-    padding-right: 0;
-    transition: color 0.3s;
+    padding-left: 35px;
+    transition: color 0.3s ease;
     text-align: right;
+    position: relative;
 }
 
-.a-navbar .menu li ul li a:hover {
-    color: #fff;
-
-}
-
-.a-navbar .menu li:hover ul {
-    visibility: visible;
-    opacity: 1;
-}
-
-.a-navbar .menu li:hover .mega-wrapper {
-    visibility: visible;
-    opacity: 1;
-}
-
-.menu .mega-wrapper {
-    visibility: hidden; 
-    opacity: 0;
-    display: flex;
-    justify-content: space-between;
+.more-item > a::after {
+    font-family: FontAwesome;
+    content: "\f104";
     position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: red;
-    border-radius: 5px;
-    transition: all 0.3s;
-    background-color: #2e2e2e;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    left: -10px;
+    top: 0;
 }
 
-.mega-wrapper .mega-sub {
-    white-space: nowrap;
-    list-style: none;
-    padding: 10px 0;
-    border-right: 1px solid #222;
+.more-item {
+    position: relative;
+}
+
+.more-item:hover .sub-menu {
+    visibility: visible !important;
+}
+
+.more-item > .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
     
 }
 
-.mega-wrapper .mega-sub:first-child   {
-    border-right: none;
+
+.sub-menu a:hover , .mega-sub-menu a:hover {
+    color: #fff !important;
+
 }
 
 
-.slider-overlay  {
+.a-navbar .menu li:hover .mega-full {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mega-full {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.mega-full .mega-wrapper {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #2e2e2e;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.mega-full .mega-wrapper .mega-sub-wrap {
+    padding: 2rem;
+    border-left: 1px solid #424242; 
+}
+
+.mega-sub-wrap:last-child {
+    border-left: none !important;
+}
+
+.mega-full .mega-wrapper .mega-sub-wrap .mega-sub-menu {
+    list-style: none;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.mega-sub-menu li {
+    padding: 5px 10px;
+}
+
+.mega-sub-menu li a {
+    padding: 0;
+    text-align: center;
+}
+
+.slider-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -190,7 +227,6 @@ body {
     position: absolute;
     top: 45%;
     bottom: 45%;
-    
 }
 
 .content h2 {
