@@ -45,23 +45,20 @@ body {
     z-index: 1000;
 }
 
+.a-navbar.prefixed {
+    visibility: hidden;
+    height: 0;
+}
+ 
 .a-navbar.fixed {
+    visibility: visible;
     position: fixed; 
+    height: 80px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    width: 100%; 
     top: 0;
     left: 0;
-    width: 100%; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-
-.a-navbar img {
-    transition: all 0.3s ease;
-
-}
-
-.a-navbar.fixed img {
-    width: 115px; 
-    height: 25px; 
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .menu-sm .logo-sm img {
@@ -430,7 +427,7 @@ footer .navigation li a {
     padding: 15px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
 
     .menu-sm {
         width: 100%;
