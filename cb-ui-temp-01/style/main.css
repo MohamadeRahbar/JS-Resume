@@ -232,46 +232,38 @@ feed & side-bar
     border: none;
     border-radius: 50%;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    min-width: 78px;
+    min-height: 78px;
+    background-color: #fff;
 }
 
 .like-btn span {
     display: block;
     padding: 10px;
-    margin: auto auto;
-}
-
-.like-btn:hover {
-    color: #ff5500;
-    text-shadow: 0 2px 2px #fff;
-    background-color: #bababa;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-
-}
-
-.like-btn:active {
-    color: #ff5500;
-    text-shadow: 0 2px 2px #fff;
-    background-color: #999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-
+    color: #444;
+    font-weight: 600;
+    font-family: "Montserrat",sans-serif !important;
+    line-height: 1.2;
+    font-size: 14px;
 }
 
 .like-btn span::before {
     display: block;
     font-family: FontAwesome;
     content: "\f08a";
+    font-size: 1rem !important;
+    font-weight: normal;
 }
 
-.like-btn:active span::before {
+.like-btn.liked span::before {
     content: "\f004";
-    color: red;
     
 }
 
 .like-btn:active span::before {
     content: "\f004";
-    color: red;
+    color: #444;
     
 }
 
@@ -312,11 +304,10 @@ feed & side-bar
 }
 
 .fc-social::after {
-    content: " ";
-    display: inline-block;
-    border-bottom: 1px dashed #8b8b8b;
-    margin: 10px 0;
-    width: 30%;
+    content: "- - - - - - - - - - - - - - - -";
+    margin-right: 10px ;
+    color: #8b8b8b;
+    font-size: 15px;
 }
 
 
