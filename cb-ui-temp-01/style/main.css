@@ -1,5 +1,6 @@
 html,body {
     overflow-x: hidden;
+    line-height: 1.5;
 }
 @font-face {
     font-family: vazir;
@@ -221,9 +222,37 @@ feed & side-bar
 ==================
  */
 
+.py-40 {
+    padding: 40px 0;
+}
+
+/* like btn */
 .feed-ui {
     position: relative;
 }
+
+.feed-img {
+    overflow: hidden;
+    
+}
+
+.feed-ui a img {
+    transition: all 0.45s ease;
+}
+
+.feed-ui {
+    background-color: #000;
+}
+
+.feed-ui a:hover img {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.45s ease;
+}
+
+
 
 .like-btn {
     position: absolute;
@@ -271,36 +300,42 @@ feed & side-bar
     content: "\f004" !important;
 }
 
+
 .mr-line:after {
     content: " ";
     display: inline-block;
     border-bottom: 2px solid #ec6a2a;
-    margin: 0 10px 4px;
-    width: 12px;
+    margin: 0 12px;
+    width: 10px;
     
 }
 
-.fc-social a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.fc-title h3 a {
+    color: #343434;
+    line-height: 1.4;
 }
 
-.feed-item a , i {
-    transition: all 0.3 ease;
+.fc-title h3:hover a , .fc-social a:hover i{
+    color: #ec6a2a !important; 
 }
 
-.feed-item a:hover {
-    color: #ec6a2a; 
+.fc-info img {
+    max-width: 36px;
+    vertical-align: middle;
+    margin-left: 18px;
+    border-radius: 50%;
 }
+
+.fc-social i {
+    font-size: 14px !important;
+    color: #202020;
+    transition: all 0.25s ease;
+}
+
 
 .feed-item a:active {
     color: #ff3300; 
-}
-
-.fc-social a i {
-    font-size: 1.2rem;
-
 }
 
 .fc-social::after {
@@ -308,11 +343,15 @@ feed & side-bar
     margin-right: 10px ;
     color: #8b8b8b;
     font-size: 15px;
+    line-height: 1.8;
+    text-align: right;
 }
 
 
 .blog-content {
     text-align: justify;
+    color: #8b8b8b;
+    margin-bottom: 30px;
 }
 
 
