@@ -42,22 +42,17 @@ body {
 
 .a-navbar.prefixed {
     visibility: hidden;
-    height: 0;
+    height: 0px;
 }
  
 .a-navbar.fixed {
     visibility: visible;
     position: fixed; 
-    height: 60px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    height: 70px;
     width: 100%; 
     top: 0;
     left: 0;
-    
-}
-
-.menu-sm .logo-sm img {
-    display: none;
 }
 
 /* hamburger menu by mrAlpha */
@@ -70,21 +65,24 @@ body {
     cursor: pointer;
 }
 
-nav section.container .row {
-    position: relative;
+.menu-sm .logo-sm img {
+    display: none;
 }
 
-.a-navbar .menu {
+
+.a-navbar .nav-main-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70px;
     list-style: none;
     margin: 0;
     gap: 40px;
     padding: 0;
+    z-index: 1;
 }
 
-.a-navbar .menu > li > a {
+.a-navbar .nav-main-menu > li > a {
     text-decoration: none;
     display: block;
     color: #aaa;
@@ -96,7 +94,7 @@ nav section.container .row {
     position: relative;
 }
 
-.a-navbar .menu li a:hover {
+.a-navbar .nav-main-menu li a:hover {
     color: #222;
 }
 
@@ -106,7 +104,6 @@ nav section.container .row {
     transition: all 0.3s ease;
     position: absolute;
     top: 100%;
-    right: 0;
     background-color: #2e2e2e;
     list-style: none;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -117,13 +114,13 @@ nav section.container .row {
     
 }
 
-.a-navbar .menu li:hover .sub-menu {
+.a-navbar .nav-main-menu li:hover .sub-menu {
     visibility: visible;
     opacity: 1;
 }
 
 
-.sub-menu  a , .mega-sub-menu a {
+.sub-menu a , .mega-sub-menu a {
     text-decoration: none;
     display: block;
     color: #bababa;
@@ -163,7 +160,7 @@ nav section.container .row {
 }
 
 
-.a-navbar .menu li:hover .mega-full {
+.nav-main-menu li:hover .mega-full {
     visibility: visible;
     opacity: 1;
 }
@@ -172,13 +169,15 @@ nav section.container .row {
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease;
+    
 }
 
 .mega-full .mega-wrapper {
     position: absolute;
+    width: 100%;
     top: 100%;
+    right: 0;
     display: flex;
-    justify-content: center;
     flex-direction: row;
     background-color: #2e2e2e;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -186,8 +185,10 @@ nav section.container .row {
 }
 
 .mega-full .mega-wrapper .mega-sub-wrap {
+    width: 25%;
     padding: 2rem;
     border-left: 1px solid #424242; 
+    
 }
 
 .mega-sub-wrap:last-child {
@@ -200,7 +201,6 @@ nav section.container .row {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
 }
 
 .mega-sub-menu li {
