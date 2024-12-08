@@ -55,6 +55,7 @@ body {
     left: 0;
 }
 
+
 /* hamburger menu by mrAlpha */
 .a-navbar .menuger {
     display: none;
@@ -69,7 +70,6 @@ body {
     display: none;
 }
 
-
 .a-navbar .nav-main-menu {
     display: flex;
     justify-content: center;
@@ -79,7 +79,8 @@ body {
     margin: 0;
     gap: 40px;
     padding: 0;
-    z-index: 1;
+    position: relative;
+    z-index: 980;
 }
 
 .a-navbar .nav-main-menu > li > a {
@@ -92,14 +93,31 @@ body {
     transition: color 0.3s ease;
     white-space: nowrap;
     position: relative;
+    transition: all 0.2s ease;
 }
 
-.a-navbar .nav-main-menu li a:hover {
+.a-navbar .nav-main-menu > li > a.active {
+    color: #222;
+} 
+
+/* TODO by js */
+.nav-border-bottom {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 15px;
+    border-bottom-width: 2px;
+    border-color: #ec6a2a;
+    border-bottom-style: solid;
+    transition: all 0.3s ease;
+}
+
+.a-navbar .nav-main-menu > li > a:hover {
     color: #222;
 }
 
  li .sub-menu {
-    visibility: hidden; 
+    visibility: hidden !important; 
     opacity: 0;
     transition: all 0.3s ease;
     position: absolute;
@@ -107,16 +125,19 @@ body {
     background-color: #2e2e2e;
     list-style: none;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    padding: 20px !important;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
 }
 
-.a-navbar .nav-main-menu li:hover .sub-menu {
-    visibility: visible;
-    opacity: 1;
+.sub-menu li {
+    padding: 5px 30px;
+ 
+}
+
+.sub-menu li:first-child {
+    padding-top: 12px;
+}
+
+.sub-menu li:last-child {
+    padding-bottom: 12px;
 }
 
 
@@ -124,36 +145,44 @@ body {
     text-decoration: none;
     display: block;
     color: #bababa;
-    padding-left: 35px;
     transition: color 0.3s ease;
     text-align: right;
     position: relative;
+    padding-left: 35px;
 }
 
-.more-item > a::after {
-    font-family: FontAwesome;
-    content: "\f104";
-    position: absolute;
-    left: -10px;
-    top: 0;
+li:hover > .sub-menu , .nested-item:hover > .sub-menu {
+    visibility: visible !important;
+    opacity: 1;
 }
 
-.more-item {
+/* nested item menu */
+.nested-item {
     position: relative;
 }
 
-.more-item:hover .sub-menu {
-    visibility: visible !important;
-}
-
-.more-item > .sub-menu {
+.nested-item > a::after {
+    font-family: FontAwesome;
+    content: "\f104";
     position: absolute;
     top: 0;
-    left: 100%;
-    
+    left: -15%;
 }
 
+.nested-item > .sub-menu {
+    visibility: hidden !important;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
 
+/* nested item menu */
+
+
+/* mega menu */
 .sub-menu a:hover , .mega-sub-menu a:hover {
     color: #fff !important;
 
@@ -211,6 +240,7 @@ body {
     padding: 0;
     text-align: center;
 }
+/* mega menu */
 
 
 /* 
@@ -467,12 +497,23 @@ footer .navigation li a {
     padding: 15px 0;
 }
 
-@media (max-width: 999px) {
+/* 
+===============
+    responsive
+===============
+ */
 
+@media (max-width: 992px) {
     .menu-sm {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        padding: 10px;
+        position: relative;
+    }
+
+    .a-navbar .menuger {
+        display: block; 
     }
 
     .menu-sm .logo-sm img {
@@ -481,41 +522,28 @@ footer .navigation li a {
         height: 28px;   
     }
 
-    .a-navbar .menuger {
-        display: block; 
-    }
-
-    .a-navbar .menu {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #eaeaea;
-        width: 100%;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        z-index: 100;
-    }
-
-    .a-navbar .menu.active {
-        visibility: visible;
-        opacity: 1;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        transition: all 0.25s ease;
-
+    .a-navbar .main-parent{
+        
     }
     
-    .a-navbar .menu li a {
-        padding: 10px 20px;
+    .a-navbar .nav-main-menu {
+        
+
     }
 
-    .a-navbar .menu .logo  {
-        display: none;
+    .nav-main-menu.active {
+    
+        
+    }
+    
+    .a-navbar .nav-main-menu li a {
     }
 
-    .a-navbar .menu li .sub-menu {
+    .a-navbar .nav-main-menu .logo  {
+   
+    }
+
+    .a-navbar .nav-main-menu li .sub-menu {
 
     }
 }

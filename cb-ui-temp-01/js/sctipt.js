@@ -22,7 +22,8 @@ $.addEventListener('scroll', function () {
 */
 $.addEventListener("DOMContentLoaded", function () {
     const hamburgerMenu = document.querySelector(".menuger");
-    const menu = document.querySelector(".a-navbar .menu");
+    const menu = document.querySelector(".nav-main-menu-md");
+
 
     hamburgerMenu.addEventListener("click", function () {
         menu.classList.toggle("active");
