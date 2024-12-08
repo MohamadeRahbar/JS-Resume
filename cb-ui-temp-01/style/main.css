@@ -212,6 +212,14 @@ body {
     text-align: center;
 }
 
+
+/* 
+==================
+    slider
+==================
+ */
+
+
 .slider-overlay {
     position: absolute;
     top: 0;
@@ -249,7 +257,7 @@ body {
 
 /* 
 ==================
-feed & side-bar
+feed items (posts)
 ==================
  */
 
@@ -257,14 +265,12 @@ feed & side-bar
     padding: 40px 0;
 }
 
-/* like btn */
-.feed-ui {
+.feed-item .feed-ui {
     position: relative;
 }
 
-.feed-img {
+.feed-ui .feed-img {
     overflow: hidden;
-    
 }
 
 .feed-ui a img {
@@ -282,8 +288,6 @@ feed & side-bar
     transform: scale(1.1);
     transition: all 0.45s ease;
 }
-
-
 
 .like-btn {
     position: absolute;
@@ -338,7 +342,6 @@ feed & side-bar
     border-bottom: 2px solid #ec6a2a;
     margin: 0 12px;
     width: 10px;
-    
 }
 
 
@@ -364,7 +367,6 @@ feed & side-bar
     transition: all 0.25s ease;
 }
 
-
 .feed-item a:active {
     color: #ff3300; 
 }
@@ -385,16 +387,20 @@ feed & side-bar
     margin-bottom: 30px;
 }
 
+/* 
+==================
+    side bar
+==================
+ */
 
 
 
 
-
-
-
-
-
-
+/* 
+===============
+    footer
+===============
+ */
 
 .footer-sections {
     background-color: var(--tmp-bg);
