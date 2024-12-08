@@ -2,6 +2,8 @@ html,body {
     overflow-x: hidden;
     line-height: 1.5;
 }
+
+
 @font-face {
     font-family: vazir;
     src: url(../fonts/Vazir.woff);
@@ -473,11 +475,16 @@ feed items (posts)
 ===============
  */
 
+footer a , footer p {
+    font-size: 1.1rem ;
+}
+
 .footer-sections {
     background-color: var(--tmp-bg);
 }
 
 .footer-sections h3 {
+    font-size: 1.1rem;
     font-weight: bold;
     color: #fff;
 }
@@ -492,12 +499,22 @@ feed items (posts)
     color: #fff;
 }
 
-.sub-cat {
-    /* margin: 10px 0; */
+.phone-call a {
+    color: #ec6a2a;
 }
 
-.sub-cat li {
-   list-style: none;
+.phone-call a:hover {
+    color: #ec6a2a;
+
+}
+
+.ft-cat-holder {
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.sub-cat {
+    white-space: nowrap;
 }
 
 .sub-cat li:nth-child(2){
@@ -505,7 +522,7 @@ feed items (posts)
 }
 
 .follow-social i {
-    font-size: 40px;
+    font-size: 30px;
     padding: 10px;
 }
 
@@ -518,6 +535,7 @@ feed items (posts)
     text-decoration: none;
     color: var(--cpy-right-color);
     transition: all 0.3s;
+    white-space: nowrap;
 }
 
 .footer-cpy a:hover {
