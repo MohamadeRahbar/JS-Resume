@@ -426,6 +426,47 @@ feed items (posts)
 
 
 
+
+/* 
+===============
+    pagination
+===============
+ */
+
+ .pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+ }
+
+.pagination a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 1;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s ease;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #929292;
+}
+
+.pagination a:hover {
+    background-color: #ec6a2a;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #ec6a2a;
+    color: white;
+
+}
+
+
+
 /* 
 ===============
     footer
