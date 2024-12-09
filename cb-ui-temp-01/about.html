@@ -6,113 +6,430 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About-us</title>
     <link rel="stylesheet" href="./style/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/about.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- nav -->
-    <nav class="a-navbar">
-        <div class="menu-sm">
-            <button class="menuger">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="logo-sm">
-                <a href="./index.html">
-                    <img src="./images/logo.png" title="logo" alt="لوگو" width="125" height="30">
-                </a>
+    <!-- navbar -->
+    <header>
+        <div class="container">
+            <!-- menuger: hamburger menu by mrAlpha -->
+            <!-- <div class="row">
+                    <div class="col">
+                        <div class="menu-sm">
+                            <button class="menuger">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div class="logo-sm">
+                                <a href="./index.html">
+                                    <img src="./images/logo.png" title="logo" alt="لوگو" width="125" height="30">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- main menu -->
+            <div class="row">
+                <nav id="a-navbar" class="a-navbar">
+                    <div class="col main-parent">
+                        <ul class="nav-main-menu">
+                            <li><a class="active" href="#home">خانه</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#home1">خانه یک </a></li>
+                                    <li><a href="#home2">خانه دو</a></li>
+                                    <li><a href="#home3">خانه سه</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#services">خدمات</a>
+                                <div class="mega-full">
+                                    <div class="mega-wrapper">
+                                        <div class="mega-sub-wrap">
+                                            <ul class="mega-sub-menu">
+                                                <li><a href="#">
+                                                        آیتم اول
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم دوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم سوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم چهارم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم پنجم
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-sub-wrap">
+                                            <ul class="mega-sub-menu">
+                                                <li><a href="#">
+                                                        آیتم اول
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم دوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم سوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم چهارم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم پنجم
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-sub-wrap">
+                                            <ul class="mega-sub-menu">
+                                                <li><a href="#">
+                                                        آیتم اول
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم دوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم سوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم چهارم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم پنجم
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mega-sub-wrap">
+                                            <ul class="mega-sub-menu">
+                                                <li><a href="#">
+                                                        آیتم اول
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم دوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم سوم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم چهارم
+                                                    </a></li>
+                                                <li><a href="#">
+                                                        آیتم پنجم
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#features">قابلیت ها</a>
+                                <ul class="sub-menu">
+                                    <li class="nested-item">
+                                        <a href="#feat1">قابلیت یک </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">زیر منو</a></li>
+                                            <li><a href="#">زیر منو</a></li>
+                                            <li><a href="#">زیر منو</a></li>
+                                            <li><a href="#">زیر منو</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#feat1">قابلیت دو </a>
+                                    </li>
+                                    <li>
+                                        <a href="#feat1">قابلیت سه </a>
+                                    </li>
+                                    <li>
+                                        <a href="#feat1">قابلیت چهار </a>
+                                    </li>
+                                    <li class="nested-item">
+                                        <a href="#feat1">قابلیت پنج </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">زیر منو</a></li>
+                                            <li><a href="#">زیر منو</a></li>
+                                            <li><a href="#">زیر منو</a></li>
+                                            <li><a href="#">زیر منو</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="logo">
+                                <a href="./index.html">
+                                    <img src="./images/logo.png" title="logo" alt="لوگو" width="125" height="30">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#pages">صفحات</a>
+                            </li>
+                            <li><a href="#contact">تماس با ما</a></li>
+                            <li><a title="About-Us" href="./about.html">درباره ما</a></li>
+                            <span class="d-none d-lg-block nav-border-bottom"></span>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-        <ul class="menu">
-            <li><a href="#home">خانه</a>
-                <ul class="sub-menu">
-                    <li><a href="#home1">خانه یک </a></li>
-                    <li><a href="#home2">خانه دو</a></li>
-                    <li><a href="#home3">خانه سه</a></li>
-                </ul>
-            </li>
-            <li><a href="#services">خدمات</a>
-                <div class="mega-wrapper">
-                    <ul class="mega-sub">
-                        <li><a href="#service1">خدمات یک</a></li>
-                        <li><a href="#service2">خدمات دو</a></li>
-                        <li><a href="#service3">خدمات سه </a></li>
-                        <li><a href="#service4">خدمات چهار</a></li>
-                    </ul>
-                    <ul class="mega-sub">
-                        <li><a href="#service1">خدمات دیگر</a></li>
-                        <li><a href="#service1">خدمات جدید</a></li>
 
-                    </ul>
-                    <ul class="mega-sub">
-                        <li><a href="#service1">خدمات موردی</a></li>
+    </header>
 
-                    </ul>
-                    <ul class="mega-sub">
-                        <li><a href="#service1">خدمات اصلی</a></li>
+    <section class="position-relative">
+        <div class="container-fluid text-center" id="firstSection">
+            <div id="introSection">
+                <h3 class="mb-3 fw-bolder font-color-1" id="intro-heading">درباره آکیا</h3>
+                <span class="font-color-2" id="intro-text">داستان ما</span>
+            </div>
+        </div>
+    </section>
 
-                    </ul>
+    <section>
+        <div class="container" id="second-section">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-lg-6 shadow">
+                        <div class="card-body p-5">
+                            <h5 class="card-title font-color-1" id="card-title1">ما را بهتر بشناسیم</h5>
+                            <p class="card-text my-4 text-secondary" id="card-text1">خیلی دور، پشت کلمه کوه ها، دور از
+                                کشورهای Vokalia و Consonantia، متون کور زندگی می کنند. آنها جدا از هم در Bookmarksgrove
+                                درست در ساحل Semantics زندگی می کنند، یک اقیانوس زبان بزرگ.</p>
+                            <ul>
+                                <li>
+                                    <span><strong>شاخ و برگ</strong> غیر قابل نفوذ درختان من، و اما چند سرگردان</span>
+                                </li>
+                                <li>
+                                    <span><strong>آرامشی شگفت انگیز</strong> وجودم را گرفته است</span>
+                                </li>
+                                <li>
+                                    <span><strong>من باید قادر</strong> به کشیدن یک ضربه نباشم</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn mt-4" id="orange-btn">بیشتر بخوانید</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-6">
+                        <img src="./images/about-img-card.jpg" class="img-fluid" alt="a girl taking picture">
+                    </div>
                 </div>
-            </li>
-            <li><a href="#features">قابلیت ها</a>
-                <ul class="sub-menu">
-                    <li><a href="#feat1">قابلیت یک </a></li>
-                    <li><a href="#feat2">قابلیت دو</a></li>
-                    <li><a href="#feat3">قابلیت سه</a></li>
-                    <li><a href="#feat4">قابلیت سه</a></li>
-                </ul>
-            </li>
-            <li class="logo">
-                <a href="./index.html">
-                    <img src="./images/logo.png" title="logo" alt="لوگو" width="125" height="30">
-                </a>
-            </li>
-            <li><a href="#pages">صفحات</a>
-                <div class="mega-wrapper">
-                    <ul class="mega-sub">
-                        <li><a href="#page1">صفحه یک</a></li>
-                        <li><a href="#page2">صقحه دو</a></li>
-                    </ul>
-                    <ul class="mega-sub">
-                        <li><a href="#otherpage">صفحه دیگر</a></li>
-                        <li><a href="#lastpage">صفحه آخر</a></li>
+            </div>
+        </div>
+    </section>
 
-                    </ul>
-                    <ul class="mega-sub">
-                        <li><a href="#newotherpage">صفحه جدید دیگر</a></li>
-
-                    </ul>
+    <section id="third-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 about-us-info">
+                    <img src="./images/about-icon-1.png" alt="index">
+                    <h3 class="about-us-info-heading">نتیجه سئو را افزایش دهید</h3>
+                    <p class="about-us-info-text">خیلی دور، پشت کلمه کوه ها، دور از کشورهای Vokalia و Consonantia، متون
+                        کور زندگی می کنند. جدا کوچک.</p>
                 </div>
-            </li>
-            <li><a href="#contact">تماس با ما</a></li>
-            <li><a title="About-Us" href="./about.html">درباره ما</a></li>
-        </ul>
-    </nav>
+                <div class="col-lg-4 about-us-info">
+                    <img src="./images/about-icon-2.png" alt="index">
+                    <h3 class="about-us-info-heading">بسیاری از خوانندگان</h3>
+                    <p class="about-us-info-text">خیلی دور، پشت کلمه کوه ها، دور از کشورهای Vokalia و Consonantia، متون
+                        کور زندگی می کنند. جدا کوچک.</p>
+                </div>
+                <div class="col-lg-4 about-us-info">
+                    <img src="./images/about-icon-3.png" alt="index">
+                    <h3 class="about-us-info-heading">پاک و پاک کردن محتوا</h3>
+                    <p class="about-us-info-text">خیلی دور، پشت کلمه کوه ها، دور از کشورهای Vokalia و Consonantia، متون
+                        کور زندگی می کنند. جدا کوچک.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="fourth-section">
+        <div class="container-fluid" id="fourth-section-child">
+            <div class="row">
+                <div class="col-lg-3 text-light information">
+                    <h3 class="information-heading">24000</h3>
+                    <p class="information-text">دنبال کننده</p>
+                </div>
+                <div class="col-lg-3 text-light information">
+                    <h3 class="information-heading">+22000</h3>
+                    <p class="information-text">خوانندگان فعال</p>
+                </div>
+                <div class="col-lg-3 text-light information">
+                    <h3 class="information-heading">+1700</h3>
+                    <p class="information-text">مقالات و پست ها</p>
+                </div>
+                <div class="col-lg-3 text-light information">
+                    <h3 class="information-heading">+24000</h3>
+                    <p class="information-text">عکس های گرفته شده</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="fifth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3 id="writer-heading">در سال 2009 توسط نویسنده حرفه ای آمریکایی یافت شد</h3>
+                    <span id="divider"></span>
+                </div>
+                <div class="col-lg-8">
+                    <p class="writer-text">آرامشی شگفت انگیز همه جانم را فرا گرفته است، مثل این صبح های شیرین بهاری که
+                        با تمام وجود از آن لذت می برم. من تنها هستم و جذابیت وجود را در این نقطه که برای سعادت آفریده
+                        شده احساس می کنم.</p>
+                    <p class="writer-text"><strong>با این حال احساس می‌کنم هرگز هنرمند بزرگ‌تری از الان نبودم.</strong>
+                        هنگامی که دره دوست داشتنی از بخار در اطرافم پر می شود و خورشید نصف النهار به سطح بالایی شاخ و
+                        برگ غیر قابل نفوذ درختانم برخورد می کند و چند درخشش سرگردان به پناهگاه درونی می دزدند، خود را در
+                        میان علف های بلند کنار دریا به پایین پرت می کنم. جریان چکنده؛ و وقتی نزدیک زمین دراز می کشم،
+                        هزار گیاه ناشناخته مورد توجه من قرار می گیرد: وقتی صدای وزوز دنیای کوچک را در میان ساقه ها می
+                        شنوم و با بی شمارها آشنا می شوم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="sixth-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3 id="author-heading">با نویسندگان ما آشنا شوید</h3>
+                    <p id="author-text mb-5">آرامشی شگفت انگیز همه جانم را فرا گرفته است، مثل این صبح های شیرین بهاری که
+                        با تمام وجود از آن لذت می برم. من تنها هستم.</p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-6 col-lg-3 author-row">
+                    <div class="card text-center shadow">
+                        <img src="./images/author-1.jpg" class="card-img-top" alt="author-1">
+                        <div class="card-body d-flex align-items-center justify-content-center flex-column gap-4">
+                            <div>
+                                <h5 class="card-title author-name">Kally Gordon</h5>
+                                <p class="card-text author-position">Junior Writter</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="social-icons"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-pinterest-p"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <a href="#" class="article-links">مقالات را بخوانید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 author-row">
+                    <div class="card text-center shadow">
+                        <img src="./images/author-2.jpg" class="card-img-top" alt="author-2">
+                        <div class="card-body d-flex align-items-center justify-content-center flex-column gap-4">
+                            <div>
+                                <h5 class="card-title author-name">Janet Jones</h5>
+                                <p class="card-text author-position">Senior Writter</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="social-icons"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-pinterest-p"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <a href="#" class="article-links">مقالات را بخوانید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 author-row">
+                    <div class="card text-center shadow">
+                        <img src="./images/author-3.jpg" class="card-img-top" alt="author-3">
+                        <div class="card-body d-flex align-items-center justify-content-center flex-column gap-4">
+                            <div>
+                                <h5 class="card-title author-name">Paul Newman</h5>
+                                <p class="card-text author-position">Senior Editor</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="social-icons"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-pinterest-p"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <a href="#" class="article-links">مقالات را بخوانید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 author-row">
+                    <div class="card text-center shadow">
+                        <img src="./images/author-4.jpg" class="card-img-top" alt="author-4">
+                        <div class="card-body d-flex align-items-center justify-content-center flex-column gap-4">
+                            <div>
+                                <h5 class="card-title author-name">Jane Smith</h5>
+                                <p class="card-text author-position">Senior Writter</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-3">
+                                <a href="#" class="social-icons"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-pinterest-p"
+                                        aria-hidden="true"></i></a>
+                                <a href="#" class="social-icons"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <a href="#" class="article-links">مقالات را بخوانید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div>
+                    <h3 id="brands-heading">ما در این جاها نمایش داده شده ایم</h3>
+                    <span id="divider2"></span>
+                </div>
+            </div>
+            <div class="row text-center overflow-hidden my-5">
+                <div class="col-md-6 col-lg-3 brand-row">
+                    <img src="./images/banner-1.jpg" alt="brand1">
+                </div>
+                <div class="col-md-6 col-lg-3 brand-row">
+                    <img src="./images/banner-2.jpg" alt="brand2">
+                </div>
+                <div class="col-md-6 col-lg-3 brand-row">
+                    <img src="./images/banner-3.jpg" alt="brand3">
+                </div>
+                <div class="col-md-6 col-lg-3 brand-row">
+                    <img src="./images/banner-4.jpg" alt="brand4">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- back to top btn -->
+    <a href="#" id="scroll-Top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- footer -->
     <footer>
         <!-- footer items -->
         <div class="container-fluid footer-sections">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="col-md-4 address text-center">
-                        <h3>آدرس ما</h3>
-                        <p class="my-4">تهران، شهرک غرب، بلوار دریا، نبش اولی، کوچه دومی </p>
-                        <a href="#">021-88995527 <i class="fa-solid fa-phone"></i></a>
+            <div class="container-lg">
+                <div class="row py-4 px-0">
+                    <div class="col-md-4 text-center">
+                        <h3 class="mb-4">به ما بپیوندید :)</h3>
+                        <div class="follow-social mt-2 mt-md-5">
+                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        </div>
                     </div>
-                    <div class="col-md-4 category text-center">
+                    <div class="col-md-4 text-center">
                         <h3 class="my-4 my-md-0">دسته بندی</h3>
-                        <ul class="d-md-flex justify-content-evenly gap-2 my-4">
+                        <ul class="ft-cat-holder d-md-flex justify-content-evenly gap-2 my-4">
                             <div class="sub-cat">
                                 <li><a href="#">دسته اول</a></li>
                                 <li><a href="#">دسته دوم</a></li>
                                 <li><a href="#">دسته سوم</a></li>
                             </div>
-                            <div class="sub-cat">
+                            <div class="sub-cat my-2 my-md-0">
                                 <li><a href="#">دسته چهارم</a></li>
                                 <li><a href="#">دسته پنجم</a></li>
                                 <li><a href="#">دسته ششم</a></li>
@@ -120,20 +437,18 @@
                         </ul>
                     </div>
                     <div class="col-md-4 text-center">
-                        <h3>به ما بپیوندید :)</h3>
-                        <div class="follow-social my-4">
-                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <h3 class="mb-4">آدرس ما</h3>
+                        <p class="my-4">تهران، شهرک غرب، بلوار دریا، نبش اولی، کوچه دومی </p>
+                        <div class="phone-call">
+                            <a href="#">021-88995527 <i class="fa-solid fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- copy right & navigation menu -->
-        <div class="container-fluid footer-cpy p-3">
-            <div class="container">
+        <div class="container-fluid footer-cpy p-3  ">
+            <div class="container-lg ">
                 <div class="row">
                     <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center">
                         <ul class="navigation p-2">
@@ -144,14 +459,15 @@
                             <li><a href="#News">اخبار</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                    <div
+                        class="cpy-right col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
                         <p>© تمام حقوق برای <a href="#">Weblog</a> محفوظ است. </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="./js/sctipt.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,240 @@
+
+.feed-item .feed-ui {
+    position: relative;
+}
+
+
+.like-btn {
+    position: absolute;
+    bottom: -5%;
+    left: -3%;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    min-width: 78px;
+    min-height: 78px;
+    background-color: #fff;
+}
+
+.like-btn span {
+    display: block;
+    padding: 10px;
+    color: #444;
+    font-weight: 600;
+    font-family: "Montserrat",sans-serif !important;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.like-btn span::before {
+    display: block;
+    font-family: FontAwesome;
+    content: "\f08a";
+    font-size: 1rem !important;
+    font-weight: normal;
+}
+
+.like-btn.liked span::before {
+    content: "\f004";
+    
+}
+
+.like-btn:active span::before {
+    content: "\f004";
+    color: #444;
+    
+}
+
+.like-btn.liked span {
+    content: "\f004" !important;
+}
+
+
+.mr-line:after {
+    content: " ";
+    display: inline-block;
+    border-bottom: 2px solid #ec6a2a;
+    margin: 0 12px;
+    width: 10px;
+    
+}
+
+
+.fc-title h3 a {
+    color: #343434;
+    line-height: 1.4;
+}
+
+
+.fc-info img {
+    max-width: 36px;
+    vertical-align: middle;
+    margin-left: 18px;
+    border-radius: 50%;
+}
+
+.fc-social i {
+    font-size: 14px !important;
+    color: #202020;
+    transition: all 0.25s ease;
+}
+
+
+.feed-item a:active {
+    color: #ff3300; 
+}
+
+.pc-social::after {
+    content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
+    margin-right: 10px ;
+    color: #202020;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: right;
+}
+
+.after-links::after {
+    content: ".";
+    margin-right: 20px;
+}
+
+
+.blog-content {
+    text-align: justify;
+    color: #8b8b8b;
+}
+
+
+#post-links a:hover {
+    color: #202020;
+}
+
+#post-status {
+    color: #565656;
+}
+
+#caption-heading {
+    font-weight: 700;
+    color: #383838;
+    line-height: 1.2;
+}
+
+#read-this {
+    font-weight: 700;
+    font-size: 18px;
+    color: #565656;
+}
+
+#read-this-link {
+    color: #ec6a2a;
+}
+
+#black-text {
+    color: #010101;
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
+#black-text::before {
+    content: "“";
+    font-size: 140px;
+    font-weight: 800;
+    margin-top: -55px;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: -105px;
+    color: #ebebeb;
+}
+
+#post-ul {
+    font-size: 18px;
+}
+
+#post-ul li {
+    color: #565656;
+}
+
+.social-links {
+    color: #202020;
+}
+
+.social-links:hover {
+    color: #ec6a2a;
+    transition: all 0.4s ease;
+}
+
+.share-btn {
+    background-color: #f2f2f2;
+    color: #626262;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-right: 5px;
+    border: 1px solid #f2f2f2;
+    border-radius: 0;
+}
+
+.share-btn:hover {
+    background-color: #f2f2f2;
+    color: #626262;
+}
+
+.form-control {
+    padding: 0.8rem 0.8rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: #767676;
+    border-radius: 0;
+}
+
+.form-check {
+    color: #767676;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+#submit-btn {
+    font-size: 14px;
+    padding: 16px 40px 16px;
+    background-color: #2F2F2F;
+    color: #fff;
+}
+
+@media all and (max-width: 992px) {
+    #black-text {
+        font-size: 18px;
+    }
+
+    .pc-social::after {
+        content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
+    }
+
+    #name-input {
+        margin-bottom: 1rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #other-posts {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+        text-align: center !important;
+    }
+
+    .pc-social::after {
+        content: "";
+    }
+
+    #share-btns {
+        text-align: center;
+    }
+}
