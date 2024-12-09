@@ -607,17 +607,17 @@ aside .mr-line::after {
 
 /* 
 ===============
-    pagination
+    a-pagination
 ===============
  */
 
- .pagination {
+ #a-pagination {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    align-content: center;
  }
 
-.pagination a {
+#a-pagination a {
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -632,12 +632,12 @@ aside .mr-line::after {
     color: #929292;
 }
 
-.pagination a:hover {
+#a-pagination a:hover {
     background-color: var(--tmp);
     color: white;
 }
 
-.pagination a.active {
+#a-pagination a.active {
     background-color: var(--tmp);
     color: white;
 

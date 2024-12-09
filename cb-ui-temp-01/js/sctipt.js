@@ -54,8 +54,6 @@ function goPrev() {
     alert("صفحات به هم متصل نیستند!")
 }
 
-
-
 function goNext() {
     alert("صفحات به هم متصل نیستند!")
 }
