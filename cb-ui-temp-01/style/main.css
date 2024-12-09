@@ -516,7 +516,7 @@ aside .mr-line::after {
 }
 
 .post-info .post-title {
-    text-align: justify;
+    text-align: start;
     margin-bottom: 10px;
 }
 
@@ -596,13 +596,11 @@ aside .mr-line::after {
     background-color: var(--tmp);
 }
 
-.recent-posts .rp-content .post-info {
+/* .recent-posts .rp-content .post-info {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.recent-posts .rp-content .post-info 
+} */
 
 
 /* 
@@ -779,14 +777,30 @@ footer .navigation li a {
         gap: 10px;
     }
 
-    .post-info .post-details  {
-        flex-direction: column;
-        gap: 5px;
+    .footer-sections .follow-social i {
+        font-size: 1.2rem !important;
     }
+    
+    .footer-cpy .navigation li a , .footer-cpy .cpy-right p{
+        font-size: 0.9rem !important;
+    }
+
+    
 }
 
-@media (max-width: 768px) {
+@media (min-width:600px) and (max-width: 768px) {
     .a-navbar .nav-main-menu {
         gap: 10px;
     }
+
+    .post-info .post-details  {
+        gap: 7px;
+    }
+
+    .post-info .post-title  {
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    
 }
