@@ -17,9 +17,8 @@ $.addEventListener('scroll', function () {
     }
 });
 
-/* 
-============= menuger of nav =======================
-*/
+/* ============= menuger of nav =======================
+
 $.addEventListener("DOMContentLoaded", function () {
     const hamburgerMenu = document.querySelector(".menuger");
     const menu = document.querySelector(".nav-main-menu-md");
@@ -29,7 +28,7 @@ $.addEventListener("DOMContentLoaded", function () {
         menu.classList.toggle("active");
     });
 });
-
+*/
 
 // scroll to top
 
@@ -44,6 +43,10 @@ $.onscroll = function () {
     }
 
 };
+
+function subscribed() {
+    alert("ایمیل شما در باشگاه مشتریان ذخیره شد!")
+}
 
 
 // pagination btns
