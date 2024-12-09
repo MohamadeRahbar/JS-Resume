@@ -31,9 +31,19 @@ $.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// scroll to top
 
+$.onscroll = function () {
+    let scrollTopBtn = $.getElementById("scroll-Top");
 
+    if ($.body.scrollTop > 300 || $.documentElement.scrollTop > 300) {
+        scrollTopBtn.classList.add("visible");
 
+    } else {
+        scrollTopBtn.classList.remove("visible");
+    }
+
+};
 
 
 // pagination btns
