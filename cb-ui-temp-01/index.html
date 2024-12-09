@@ -15,9 +15,9 @@
 <body>
     <!-- navbar -->
     <header>
-        <nav id="a-navbar" class="a-navbar">
-            <div class="container">
-                <div class="row">
+        <div class="container">
+            <!-- menuger: hamburger menu by mrAlpha -->
+            <!-- <div class="row">
                     <div class="col">
                         <div class="menu-sm">
                             <button class="menuger">
@@ -30,9 +30,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- main menu -->
-                <div class="row d-none d-lg-block">
+                </div> -->
+            <!-- main menu -->
+            <div class="row">
+                <nav id="a-navbar" class="a-navbar">
                     <div class="col main-parent">
                         <ul class="nav-main-menu">
                             <li><a class="active" href="#home">خانه</a>
@@ -172,10 +173,10 @@
                             <span class="d-none d-lg-block nav-border-bottom"></span>
                         </ul>
                     </div>
-                </div>
+                </nav>
             </div>
+        </div>
 
-        </nav>
     </header>
 
     <!-- contents -->
@@ -611,13 +612,13 @@
                 <div class="col-md-4">
                     <!-- side bar -->
                     <aside class="sidebar px-md-4">
-                        <div class="about-me mb-4">
-                            <h3>
+                        <div class="about-me mb-5">
+                            <h3 class="mb-4">
                                 درباره من
                                 <span class="mr-line"></span>
                             </h3>
                             <p>
-                                <img src="./images/about-image.png" alt="درباره-من">
+                                <img src="./images/about-image.png" alt="درباره-من" width="120" height="120">
                                 <br>
                                 خیلی دور، پشت کلمه کوه، دور از کشورها ووکالیا و همخوانی ها، در یک نوشته های کور زندگی می
                                 کردند
@@ -626,11 +627,11 @@
                                 <i class="fas fa-long-arrow-left"></i>
                             </a>
                         </div>
-                        <div class="side-contact-us-wrap mb-4">
+                        <div class="side-contact-us-wrap mb-5">
                             <div class="contact-us">
                                 <div class="follow-us">
-                                    <h3>به ما بپیوندید :)</h3>
-                                    <div class="follow-social">
+                                    <h3 class="mb-4">به ما بپیوندید :)</h3>
+                                    <span class="fc-social">
                                         <a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
 
                                         <a href="#" target="_blank" rel="noopener"><i
@@ -641,22 +642,22 @@
                                         <a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
 
                                         <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                                    </div>
+                                    </span>
                                 </div>
-                                <div class="news">
-                                    <h3>مجله و اخبار</h3>
+                                <div>
+                                    <h3 class="mb-4">مجله و اخبار</h3>
                                     <p>ایمیل خود را وارد کنید تا از آخرین اخبار مطلع شوید</p>
                                 </div>
                                 <div class="subscribe">
                                     <form action="#">
-                                        <input class="" type="email" name="" id="">
-                                        <input class="" type="submit" value="Subscribe">
+                                        <input placeholder="ایمیل" type="email" name="mail" id="mailInput">
+                                        <input id="suBtn" onclick="subscribed()" type="submit" value="عضویت">
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="popular-posts mb-4">
-                            <h3>پستهای محبوب
+                        <div class="popular-posts mb-5">
+                            <h3 class="mb-4">پستهای محبوب
                                 <span class="mr-line"></span>
                             </h3>
                             <div class="pop-post mb-2">
@@ -684,17 +685,92 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="pop-post mb-2">
+                                <div class="post-ui">
+                                    <a href="#">
+                                        <img class="rounded-circle" src="./images/pop-post.jpg" alt="" width="75"
+                                            height="75" title="جنگل زیبا">
+                                    </a>
+                                </div>
+                                <div class="post-info">
+                                    <div class="post-title">
+                                        <a href="#">زیبا ترین جنگل های سبز در جهان!</a>
+                                    </div>
+                                    <div class="post-details">
+                                        <span class="post-author">
+                                            <a href="#author">
+                                                محمد رهبر
+                                            </a>
+                                        </span>
+                                        <span class="post-date">
+                                            <a href="#date">
+                                                8 آبان 1400
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pop-post mb-2">
+                                <div class="post-ui">
+                                    <a href="#">
+                                        <img class="rounded-circle" src="./images/pop-post.jpg" alt="" width="75"
+                                            height="75" title="جنگل زیبا">
+                                    </a>
+                                </div>
+                                <div class="post-info">
+                                    <div class="post-title">
+                                        <a href="#">زیبا ترین جنگل های سبز در جهان!</a>
+                                    </div>
+                                    <div class="post-details">
+                                        <span class="post-author">
+                                            <a href="#author">
+                                                محمد رهبر
+                                            </a>
+                                        </span>
+                                        <span class="post-date">
+                                            <a href="#date">
+                                                8 آبان 1400
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ads-banner mb-4">
+                        <div class="ads-banner mb-5">
                             <a href="#">
-                                <img src="./images/banner-600.jpg" title="تبلیغ شما" alt="تبلیغات محمد رهبر">
+                                <img class="img-fluid" src="./images/banner-600.jpg" title="تبلیغ شما"
+                                    alt="تبلیغات محمد رهبر">
                             </a>
                         </div>
-                        <div class="posts-category mb-4">
-                            <h3>دسته بندی
+                        <div class="side-category mb-5">
+                            <h3 class="mb-4">دسته بندی
                                 <span class="mr-line"></span>
                             </h3>
-                            <ul class="list-unstyled">
+                            <ul class="posts-category list-unstyled">
+                                <li class="post-cat">
+                                    <a href="#">
+                                        <span class="post-cat-title">تکنولوژی</span>
+                                        <span class="post-cat-count">5</span>
+                                    </a>
+                                </li>
+                                <li class="post-cat">
+                                    <a href="#">
+                                        <span class="post-cat-title">تکنولوژی</span>
+                                        <span class="post-cat-count">5</span>
+                                    </a>
+                                </li>
+                                <li class="post-cat">
+                                    <a href="#">
+                                        <span class="post-cat-title">تکنولوژی</span>
+                                        <span class="post-cat-count">5</span>
+                                    </a>
+                                </li>
+                                <li class="post-cat">
+                                    <a href="#">
+                                        <span class="post-cat-title">تکنولوژی</span>
+                                        <span class="post-cat-count">5</span>
+                                    </a>
+                                </li>
                                 <li class="post-cat">
                                     <a href="#">
                                         <span class="post-cat-title">تکنولوژی</span>
@@ -704,8 +780,8 @@
 
                             </ul>
                         </div>
-                        <div class="tags mb-4">
-                            <h3>
+                        <div class="tags mb-5">
+                            <h3 class="mb-4">
                                 تگ ها
                                 <span class="mr-line"></span>
                             </h3>
@@ -725,21 +801,21 @@
                                 <a href="#">دریفت</a>
                             </div>
                         </div>
-                        <div class="ads-mini-banner mb-4">
+                        <div class="ads-mini-banner mb-5">
                             <a href="#">
-                                <img src="./images/banner-250.jpg" title="تبلیغ دیگر شما" alt="تبلیغات_کلیکی">
+                                <img class="img-fluid" src="./images/banner-250.jpg" title="تبلیغ دیگر شما"
+                                    alt="تبلیغات_کلیکی">
                             </a>
                         </div>
-                        <div class="recent-posts mb-4">
-                            <h3>
+                        <div class="recent-posts mb-5">
+                            <h3 class="mb-4">
                                 پستهای اخیر
                                 <span class="mr-line"></span>
                             </h3>
                             <div class="rp-content">
-                                <div class="post-ui">
+                                <div class="post-ui mb-3">
                                     <a href="#">
-                                        <img src="./images/recent-post.jpg" alt="" width="340" height="165"
-                                            title="جنگل زیبا">
+                                        <img class="img-fluid" src="./images/recent-post.jpg" alt="" title="جنگل زیبا">
                                     </a>
                                     <span class="rp-cat">
                                         <a href="#" rel="tag">
@@ -800,7 +876,7 @@
             <div class="container">
                 <div class="row p-4">
                     <div class="col-md-4 text-center">
-                        <h3>به ما بپیوندید :)</h3>
+                        <h3 class="mb-4">به ما بپیوندید :)</h3>
                         <div class="follow-social mt-2 mt-md-5">
                             <a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
                             <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
@@ -824,7 +900,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4 text-center">
-                        <h3>آدرس ما</h3>
+                        <h3 class="mb-4">آدرس ما</h3>
                         <p class="my-4">تهران، شهرک غرب، بلوار دریا، نبش اولی، کوچه دومی </p>
                         <div class="phone-call">
                             <a href="#">021-88995527 <i class="fa-solid fa-phone"></i></a>
