@@ -16,22 +16,7 @@
 <body>
     <!-- navbar -->
     <header>
-        <div class="container">
-            <!-- menuger: hamburger menu by mrAlpha -->
-            <!-- <div class="row">
-                    <div class="col">
-                        <div class="menu-sm">
-                            <button class="menuger">
-                                <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <div class="logo-sm">
-                                <a href="./index.html">
-                                    <img src="./images/logo.png" title="logo" alt="لوگو" width="125" height="30">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+        <div class="container-fluid container-lg">
             <!-- main menu -->
             <div class="row">
                 <nav id="a-navbar" class="a-navbar">
@@ -181,7 +166,7 @@
     </header>
 
     <section>
-        <div class="container px-5">
+        <div class="container-fluid container-lg px-5">
             <div class="feed-item">
                 <div class="fc-header my-5 text-center">
                     <div class="fc-title">
@@ -214,7 +199,7 @@
                         <span>973</span>
                     </button>
                 </div>
-                <div class="feed-content m-5">
+                <div class="feed-content my-5">
                     <div class="d-flex align-items-center gap-4 my-4" id="post-links">
                         <a href="#" class="after-links">خانه</a>
                         <a href="#" class="after-links">سفر</a>
@@ -249,12 +234,12 @@
     </section>
 
     <section>
-        <div class="container px-5">
+        <div class="container-fluid container-lg px-5">
             <figure>
                 <img src="./images/post.2ndimg.jpeg" alt="nature" class="img-fluid">
                 <figcaption class="mt-2 text-center fst-italic text-secondary">طبیعت</figcaption>
             </figure>
-            <div class="m-5">
+            <div class="my-5">
                 <p class="blog-content my-5">خیلی دور، پشت کلمه کوه ها، دور از کشورهای Vokalia و Consonantia، متون کور
                     زندگی می کنند. آنها جدا از هم در Bookmarksgrove درست در ساحل Semantics زندگی می کنند، یک اقیانوس
                     زبان بزرگ. رودخانه کوچکی به نام دودن از کنار آنها می گذرد و مواد غذایی لازم را برای آن تامین می کند.
@@ -262,7 +247,8 @@
                     هیچ کنترلی بر متون کور ندارد، این یک زندگی تقریبا غیرمستقل است یک روز هرچند یک خط کوچک.</p>
                 <p class="blog-content mb-5">دوست عزیز من آنقدر خوشحالم که آنقدر غرق در حس نفیس وجود آرام هستم که
                     استعدادهایم را نادیده می گیرم. من باید در حال حاضر و هنوز قادر به کشیدن یک ضربه نباشم.</p>
-                <p id="black-text" class="m-5">خیلی دور، پشت کلمه کوه ها، دور از کشورهای Vokalia و Consonantia، متون کور
+                <p id="black-text" class="m-lg-5">خیلی دور، پشت کلمه کوه ها، دور از کشورهای Vokalia و Consonantia، متون
+                    کور
                     زندگی می کنند. جدا از هم در نشانک ها زندگی می کنند.</p>
                 <ul id="post-ul" class="my-5">
                     <li>شاخ و برگ غیر قابل نفوذ درختان من، و اما چند درخشش سرگردان.</li>
@@ -274,7 +260,7 @@
     </section>
 
     <section>
-        <div class="container px-5 my-5">
+        <div class="container-fluid container-lg px-4 my-4">
             <div class="d-flex align-items-center justify-content-between" id="other-posts">
                 <div id="next-post">
                     <p>پست بعد</p>
@@ -307,14 +293,14 @@
 
     <!-- related post -->
     <section>
-        <div class="container px-5 my-5">
+        <div class="container-fluid container-lg px-4 my-4">
 
         </div>
     </section>
 
     <section>
-        <div class="container px-5 my-5">
-            <form action="">
+        <div class="container-fluid container-lg px-4 my-4">
+            <form id="post-comment">
                 <div class="row mb-3">
                     <div class="col">
                         <textarea class="form-control" rows="5" placeholder="نظر خود را بنویسید*" required></textarea>
@@ -343,7 +329,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="submit" class="btn" id="submit-btn">ارسال نظر</button>
+                        <button type="submit" class="btn" id="cm-submit-btn" onclick="addComment()">ارسال نظر</button>
                     </div>
                 </div>
             </form>
@@ -357,8 +343,8 @@
 
     <footer>
         <!-- footer items -->
-        <div class="container-fluid footer-sections">
-            <div class="container-lg">
+        <div class="container-fluid container-lg-fluid footer-sections">
+            <div class="container-fluid container-lg-lg">
                 <div class="row py-4 px-0">
                     <div class="col-md-4 text-center">
                         <h3 class="mb-4">به ما بپیوندید :)</h3>
@@ -395,8 +381,8 @@
             </div>
         </div>
         <!-- copy right & navigation menu -->
-        <div class="container-fluid footer-cpy p-3  ">
-            <div class="container-lg ">
+        <div class="container-fluid container-lg-fluid footer-cpy p-3  ">
+            <div class="container-fluid container-lg-lg ">
                 <div class="row">
                     <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center">
                         <ul class="navigation p-2">

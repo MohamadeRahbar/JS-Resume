@@ -80,3 +80,9 @@ window.onload = function () {
 };
 
 
+// form comment send
+function addComment() {
+    alert("نظر شما پس از بررسی توسط ادمین، اضافه خواهد شد!")
+}
+
+
