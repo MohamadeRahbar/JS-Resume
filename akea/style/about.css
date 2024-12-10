@@ -52,7 +52,7 @@ ul {
     top: 400px;
     left: 0;
     overflow: hidden;
-    z-index: 1;
+    z-index: 900;
 }
 
 #third-section {
@@ -78,19 +78,17 @@ ul {
 }
 
 #fourth-section {
-    background-color: #232323;
-    z-index: 2;
-}
-
-#fourth-section-child {
     background-image: url(../images/about-bgimg2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.40;
+    opacity: 0.99;
+}
+
+#fourth-section-child {
+    background-color: rgba(23, 23, 23, 0.8);
     padding: 150px 0px 130px 0px;
-    z-index: 1;
 }
 
 .information {
@@ -103,13 +101,12 @@ ul {
 .information-heading {
     font-size: 41px;
     font-weight: 700;
-    z-index: 3;
 }
 
 .information-text {
     font-size: 20px;
     font-weight: 400;
-    z-index: 3;
+    flood-color: #b5b5b5;
 }
 
 #fifth-section {
@@ -190,6 +187,10 @@ ul {
 
 .card-body {
     padding: 40px;
+}
+
+.brand-row img {
+    mix-blend-mode: multiply;
 }
 
 #brands-heading {

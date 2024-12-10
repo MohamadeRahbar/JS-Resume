@@ -31,7 +31,6 @@ $.addEventListener("DOMContentLoaded", function () {
 */
 
 // scroll to top
-
 $.onscroll = function () {
     let scrollTopBtn = $.getElementById("scroll-Top");
 
@@ -57,3 +56,27 @@ function goPrev() {
 function goNext() {
     alert("صفحات به هم متصل نیستند!")
 }
+
+
+// about counter #TODO
+window.onload = function () {
+    $.querySelectorAll('.counter-target').forEach(element => {
+
+        let currentNumber = element.innerHTML || 0;
+        const targetNumber = element.getAttribute('data-target');
+        const speed = element.getAttribute('data-speed') / 200 || 0.05;
+
+        const interval = setInterval(() => {
+            if (currentNumber < targetNumber) {
+                currentNumber = currentNumber + 20;
+                element.textContent = "+" + currentNumber;
+            } else {
+                clearInterval(interval);
+            }
+        }, speed);
+
+    });
+
+};
+
+
