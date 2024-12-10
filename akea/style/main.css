@@ -494,6 +494,14 @@ aside .mr-line::after {
     font-weight: bold;
 }
 
+.popular-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
 .popular-posts .pop-post {
     display: flex;
     flex-direction: row;
@@ -746,7 +754,7 @@ footer .navigation li a {
 ===============
  */
 
-@media (max-width: 992px) {
+@media (min-width:769px) and (max-width: 992px) {
     
     .a-navbar .nav-main-menu {
         gap: 10px;
@@ -760,16 +768,17 @@ footer .navigation li a {
         font-size: 0.9rem !important;
     }
 
+    .post-info .post-details  {
+        flex-direction: column;
+        gap: 5px;
+    }
+
     
 }
 
 @media (min-width:600px) and (max-width: 768px) {
     .a-navbar .nav-main-menu {
         gap: 10px;
-    }
-
-    .post-info .post-details  {
-        gap: 7px;
     }
 
     .post-info .post-title  {
