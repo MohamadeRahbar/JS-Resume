@@ -810,11 +810,10 @@ footer .navigation li a {
     }
 
     .like-btn {
-        min-width: 40px;
-        min-height: 40px;
-        
+        min-width: 40px !important;
+        min-height: 40px !important;
     }
     .like-btn span , .like-btn span::before {
-        font-size: 0.75rem !important;
+        font-size: 0.7rem !important;
     }
 }
