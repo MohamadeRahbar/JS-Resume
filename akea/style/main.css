@@ -809,13 +809,14 @@ footer .navigation li a {
     }
    
     .a-navbar .nav-main-menu {
-        gap: 1vw;
+        margin: 0 10px;
+        gap: 5px;
         height: 50px !important;
         justify-content: space-between;
     }
 
     .a-navbar .nav-main-menu  li  a {
-        padding: 5px;
+        padding: 0px;
         font-size: 0.7rem;
     }
 
