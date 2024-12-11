@@ -44,6 +44,7 @@ body {
     transition: all 0.4s ease;
 }
 
+
 .a-navbar.prefixed {
     visibility: hidden;
     height: 0px;
@@ -59,6 +60,7 @@ body {
 }
 
 .a-navbar .nav-main-menu {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -836,8 +838,8 @@ footer .navigation li a {
     }
 
     .like-btn {
-        min-width: 40px !important;
-        min-height: 40px !important;
+        min-width: 30px !important;
+        min-height: 30px !important;
     }
     .like-btn span , .like-btn span::before {
         font-size: 0.7rem !important;
