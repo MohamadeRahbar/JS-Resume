@@ -30,8 +30,8 @@ function setActivePosition() {
         const activeRect = activeItem.getBoundingClientRect();
         //  navigate from child to document to get position
         const menuRect = activeItem.parentElement.parentElement.getBoundingClientRect();
-        navBorder.style.width = `${(activeRect.width) / 2}px`;
-        navBorder.style.right = `${menuRect.right - activeRect.right}px`;
+        navBorder.style.width = `${(activeRect.width) / 3}px`;
+        navBorder.style.right = `${(menuRect.right - activeRect.right) + 10}px`;
     }
 }
 
@@ -41,14 +41,16 @@ menuItems.forEach(item => {
         const itemRect = item.getBoundingClientRect();
         const menuRect = item.parentElement.parentElement.getBoundingClientRect();
         navBorder.style.width = `${(itemRect.width) / 2}px`;
-        navBorder.style.right = `${menuRect.right - itemRect.right}px`;
+        navBorder.style.right = `${(menuRect.right - itemRect.right) + 10}px`;
     });
 
-    item.addEventListener('mouseleave', () => {
-        // reset span to the active item
+    // reset span to the active item when mouseleave from main menu
+    item.parentElement.parentElement.addEventListener('mouseleave', () => {
         setActivePosition();
     });
+
 });
+
 
 // initiallize span position 
 window.addEventListener('DOMContentLoaded', setActivePosition);
