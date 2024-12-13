@@ -19,6 +19,7 @@ $.addEventListener('scroll', function () {
 
 
 //============= nav orange underline =======================
+// #TODO This is v01 & it can be optimized with help of mr-abooali or my later knowledge :)
 
 const menuItems = $.querySelectorAll('.nav-main-menu > li > a');
 const navBorder = $.querySelector('.nav-border-bottom');
@@ -57,23 +58,8 @@ window.addEventListener('DOMContentLoaded', setActivePosition);
 window.addEventListener('resize', setActivePosition);
 
 
+// ============= scroll to top =======================
 
-/* ============= menuger of nav =======================
-
-$.addEventListener("DOMContentLoaded", function () {
-    const hamburgerMenu = $.querySelector(".menuger");
-    const menu = $.querySelector(".nav-main-menu-md");
-
-
-    hamburgerMenu.addEventListener("click", function () {
-        menu.classList.toggle("active");
-    });
-});
-*/
-
-
-
-// scroll to top
 $.onscroll = function () {
     let scrollTopBtn = $.getElementById("scroll-Top");
 
@@ -91,7 +77,7 @@ function subscribed() {
 }
 
 
-// pagination btns
+// ============= pagination btns =======================
 function goPrev() {
     alert("صفحات به هم متصل نیستند!")
 }
@@ -101,7 +87,7 @@ function goNext() {
 }
 
 
-// about counter 
+// ============= about counter =======================
 window.onload = function () {
     $.querySelectorAll('.counter-target').forEach(element => {
 
@@ -125,7 +111,8 @@ window.onload = function () {
 };
 
 
-// form comment send
+// ============= form comment  =======================
+
 function addComment() {
     alert("نظر شما پس از بررسی توسط ادمین، اضافه خواهد شد!")
 }
