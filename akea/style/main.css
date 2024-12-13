@@ -839,17 +839,16 @@ footer .navigation li a {
     }
 
     .like-btn {
-        max-width: 40px !important;
-        max-height: 40px !important;
+        width: 40px !important;
+        height: 40px !important;
         left: -20px;
     }
 
     .like-btn span {
-        
+        padding: 10px 0;
     }
 
     .like-btn span , .like-btn span::before {
         font-size: 0.6rem !important;
-        padding: 0;
     }
 }
