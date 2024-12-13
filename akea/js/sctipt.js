@@ -41,7 +41,7 @@ menuItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
         const itemRect = item.getBoundingClientRect();
         const menuRect = item.parentElement.parentElement.getBoundingClientRect();
-        navBorder.style.width = `${(itemRect.width) / 2}px`;
+        navBorder.style.width = `${(itemRect.width) / 3}px`;
         navBorder.style.right = `${(menuRect.right - itemRect.right) + 10}px`;
     });
 
@@ -51,7 +51,6 @@ menuItems.forEach(item => {
     });
 
 });
-
 
 // initiallize span position 
 window.addEventListener('DOMContentLoaded', setActivePosition);
