@@ -2,7 +2,7 @@
 ============= fixed nav =======================
 */
 const $ = document;
-const navbar = document.querySelector('.a-navbar');
+const navbar = $.querySelector('.a-navbar');
 $.addEventListener('scroll', function () {
     if ($.documentElement.scrollTop > 100 && $.documentElement.scrollTop < 250) {
         navbar.classList.add('prefixed');
@@ -17,11 +17,50 @@ $.addEventListener('scroll', function () {
     }
 });
 
+
+//============= nav orange underline =======================
+
+const menuItems = $.querySelectorAll('.nav-main-menu > li > a');
+const navBorder = $.querySelector('.nav-border-bottom');
+
+// set span position to the active item on page load
+function setActivePosition() {
+    const activeItem = $.querySelector('.nav-main-menu > li > a.active');
+    if (activeItem) {
+        const activeRect = activeItem.getBoundingClientRect();
+        //  navigate from child to document to get position
+        const menuRect = activeItem.parentElement.parentElement.getBoundingClientRect();
+        navBorder.style.width = `${(activeRect.width) / 2}px`;
+        navBorder.style.right = `${menuRect.right - activeRect.right}px`;
+    }
+}
+
+// move span to the hovered item
+menuItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        const itemRect = item.getBoundingClientRect();
+        const menuRect = item.parentElement.parentElement.getBoundingClientRect();
+        navBorder.style.width = `${(itemRect.width) / 2}px`;
+        navBorder.style.right = `${menuRect.right - itemRect.right}px`;
+    });
+
+    item.addEventListener('mouseleave', () => {
+        // reset span to the active item
+        setActivePosition();
+    });
+});
+
+// initiallize span position 
+window.addEventListener('DOMContentLoaded', setActivePosition);
+window.addEventListener('resize', setActivePosition);
+
+
+
 /* ============= menuger of nav =======================
 
 $.addEventListener("DOMContentLoaded", function () {
-    const hamburgerMenu = document.querySelector(".menuger");
-    const menu = document.querySelector(".nav-main-menu-md");
+    const hamburgerMenu = $.querySelector(".menuger");
+    const menu = $.querySelector(".nav-main-menu-md");
 
 
     hamburgerMenu.addEventListener("click", function () {
@@ -29,6 +68,8 @@ $.addEventListener("DOMContentLoaded", function () {
     });
 });
 */
+
+
 
 // scroll to top
 $.onscroll = function () {

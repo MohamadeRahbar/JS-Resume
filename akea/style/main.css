@@ -89,12 +89,10 @@ body {
     color: #222;
 } 
 
-/* TODO by js for hover each items of menu */
+/* menu item orange underline  */
 .nav-border-bottom {
     position: absolute;
     top: 70px;
-    right: 0;
-    width: 15px;
     border-bottom-width: 2px;
     border-color: var(--tmp);
     border-bottom-style: solid;
