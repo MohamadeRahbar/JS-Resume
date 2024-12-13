@@ -314,8 +314,8 @@ feed items (posts)
     border-radius: 50%;
     transition: all 0.2s ease;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-    min-width: 70px;
-    min-height: 70px;
+    width: 70px;
+    height: 70px;
     background-color: #fff;
 }
 
@@ -839,10 +839,17 @@ footer .navigation li a {
     }
 
     .like-btn {
-        width: 30px !important;
-        height: 30px !important;
+        max-width: 40px !important;
+        max-height: 40px !important;
+        left: -20px;
     }
+
+    .like-btn span {
+        
+    }
+
     .like-btn span , .like-btn span::before {
-        font-size: 0.7rem !important;
+        font-size: 0.6rem !important;
+        padding: 0;
     }
 }
