@@ -68,7 +68,9 @@ window.onload = function () {
 
         const interval = setInterval(() => {
             if (currentNumber < targetNumber) {
+
                 currentNumber += 20;
+
                 element.textContent = "+" + currentNumber;
             } else {
                 clearInterval(interval);
