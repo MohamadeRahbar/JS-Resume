@@ -58,7 +58,7 @@ function goNext() {
 }
 
 
-// about counter #TODO
+// about counter 
 window.onload = function () {
     $.querySelectorAll('.counter-target').forEach(element => {
 
@@ -68,7 +68,7 @@ window.onload = function () {
 
         const interval = setInterval(() => {
             if (currentNumber < targetNumber) {
-                currentNumber = currentNumber + 20;
+                currentNumber += 20;
                 element.textContent = "+" + currentNumber;
             } else {
                 clearInterval(interval);
