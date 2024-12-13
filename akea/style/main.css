@@ -845,7 +845,7 @@ footer .navigation li a {
     }
 
     .like-btn span {
-        padding: 10px 0;
+        padding: 10px;
     }
 
     .like-btn span , .like-btn span::before {
