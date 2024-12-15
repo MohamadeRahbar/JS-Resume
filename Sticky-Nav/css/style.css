@@ -8,10 +8,11 @@
 
 body {
 	font-family: sans-serif;
+	background-color: #ccc;
 }
 
 #mainNav .logo img {
-	height: 84px;
+	height: 80px;
 	transition: height 0.4s;
 }
 
@@ -20,10 +21,20 @@ body {
 	justify-content: space-between;
 	padding:  0px 16px;
 	position: fixed;
-	width: 100%;
 	top: 0;
-	background-color: #eee;
+	width: 100%;
+	padding: 10px;
+	background-color: #ccc;
 	transition: background 0.4s;
+}
+
+#mainNav.fixed {
+	box-shadow: 0 1px 5px #222;
+}
+
+#mainNav.fixed .logo img {
+	height: 45px;
+	
 }
 
 section {
@@ -33,7 +44,7 @@ section {
 }
 
 section:nth-of-type(1) {
-	margin-top: 84px;
+	margin-top: 90px;
 }
 
 section:nth-of-type(odd) {
