@@ -672,9 +672,9 @@ function clickBtn49(e) {
 // onLoad="" attr or addEventListener
 // useful for preloaders 
 
-window.addEventListener("load", function () {
-    console.log("Welcome To My JS Resume!" + '\n' + "This Message Will Appeared When Page Loads!" + '\n' + "To Remove It, Just Comment 673th Line Of JS Code")
-})
+// window.addEventListener("load", function () {
+//     console.log("Welcome To My JS Resume!" + '\n' + "This Message Will Appeared When Page Loads!" + '\n' + "To Remove It, Just Comment 673th Line Of JS Code")
+// })
 
 // ================= #53 |  DOMContentLoaded Event | =================
 
@@ -743,6 +743,114 @@ window.addEventListener("load", function () {
 
 // start point : scrollTop >> 0 |  end point: max height
 
+
+// ================= #73 | scrollTo() , scrollBy() Methods | =================
+
+// to scroll document to a specific section or point by xpos, ypos >> scrollTo()
+
+//  scrollTo(xpos, ypos )
+
+function goTop() {
+    window.scrollTo(0, 0)
+}
+
+// to scroll document by specific x or y number >> scrollBy(xnum, ynum)
+
+function goDown() {
+    window.scrollBy(0, 200)
+}
+
+// ================= #74 | dataset in DOM | =================
+
+// is an object that save all of our custom attributes >> DOMStringMap
+
+// to set specified element attributes and use them in js
+
+// 1- declare an attribute in html with this format >> data-(any)
+
+// 2- get attribute by navigate with target element and .dataset in js
+
+function showDataValue(e) {
+    alert("ID: " + e.target.dataset.id + "\n" + "Name: " + e.target.dataset.name);
+}
+
+// ================= #75 | Media | =================
+
+// make a full control of media audio/video
+
+// mediaElem.play() >> play
+// mediaElem.pause() >> pause
+// mediaElem.duration >> Will returns audio file duration by Seconds
+// mediaElem.currentTime >> Will returns current audio time point
+// mediaElem.playbackRate >> 1x 1.25x 1.5x
+
+let musicElem = $.getElementById("myAudio");
+let audioTimer = $.getElementById("audio-ct");
+let audioName = $.getElementById("music-name")
+
+let musicList = [
+    { name: "Avengement", src: "Media/Avengement.mp3" },
+    { name: "DEUTSCHLAND", src: "Media/DEUTSCHLAND.mp3" },
+    { name: "MyLastBreath", src: "Media/MyLastBreath.mp3" },
+    { name: "PlayingByHeart", src: "Media/PlayingByHeart.mp3" },
+    { name: "Tuesday", src: "Media/Tuesday.mp3" },
+]
+
+let musicIndex = 0;
+
+
+function playMusic() {
+    musicElem.play()
+    audioName.innerText = musicList[musicIndex].name;
+
+    setInterval(function () {
+        audioTimer.innerHTML = Math.floor(musicElem.currentTime)
+    }, 1000)
+
+    console.log("آهنگ پلی شد")
+};
+
+function pauseMusic() {
+    musicElem.pause()
+    console.log("آهنگ قطع شد")
+};
+
+function audioDuration() {
+    console.log((musicElem.duration / 60));
+};
+
+function audioSpeed(e) {
+    musicElem.playbackRate = +(e.target.dataset.speed)
+
+};
+
+function audioCT() {
+    console.log("Current Time: ", Math.floor(musicElem.currentTime));
+};
+
+function prevMusic() {
+    musicIndex--
+
+    if (musicIndex < 0) {
+        musicIndex = musicList.length - 1
+    }
+
+    musicElem.setAttribute("src", musicList[musicIndex].src)
+
+    playMusic()
+}
+
+function nextMusic() {
+    musicIndex++
+
+    if (musicIndex > musicList.length - 1) {
+        musicIndex = 0
+    }
+
+    musicElem.setAttribute("src", musicList[musicIndex].src)
+
+    playMusic()
+}
 
 // --------------------
 
