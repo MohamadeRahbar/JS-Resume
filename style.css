@@ -178,7 +178,8 @@ ul li {
   color: red;
   position: absolute;
   top: 60px;
-  right: 33%;
+  left: 0;
+  right: 0;
 }
 
 .loader {
@@ -217,7 +218,42 @@ ul li {
 }
 
 @media screen and (max-width: 768px) {
+  
+  p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  #mrAlpha-message {
+    padding: 10px;
+  }
+
   .fixed {
     display: none !important;
   }
+
+
+  #projects {
+    gap: 30px;
+  }
+
+  #projects button {
+    width: 100%;
+  }
+
 }
