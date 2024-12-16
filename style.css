@@ -252,7 +252,7 @@ ul li {
     gap: 30px;
   }
 
-  #projects button {
+  .global-btn {
     width: 100%;
   }
 

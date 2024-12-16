@@ -161,3 +161,35 @@ h3 {
     left: 100px;
   }
 }
+
+
+
+#return2root {
+  border: none;
+  border-radius: 5px;
+  background-color: #e7e7e7;
+  box-shadow: 0 2px 5px #222;
+  transition: all 0.18s ease;
+  position: fixed;
+  bottom: 10px;
+  font-family: Nunito, sans-serif;
+  font-weight: bold;
+}
+
+#return2root:hover {
+  background-color: #d7d7d7;
+  box-shadow: 0 1px 4px #222;
+}
+
+#return2root:active {
+  background-color: #a7a7a7;
+  box-shadow: 0 1px 2px #222;
+}
+
+#return2root a {
+  cursor: pointer;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #222;
+}
