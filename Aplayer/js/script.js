@@ -109,7 +109,7 @@ let songIndex = 0;
 // Previous Song
 function prevSong() {
   songIndex--;
-  if (songIndex === 0) {
+  if (songIndex < 0) {
     songIndex = songs.length - 1;
   }
   loadSong(songs[songIndex]);
