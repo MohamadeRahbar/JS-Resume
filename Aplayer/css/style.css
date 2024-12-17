@@ -170,7 +170,7 @@ h3 {
   background-color: #e7e7e7;
   box-shadow: 0 2px 5px #222;
   transition: all 0.18s ease;
-  position: fixed;
+  position: absolute;
   bottom: 10px;
   font-family: Nunito, sans-serif;
   font-weight: bold;
