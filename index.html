@@ -325,20 +325,26 @@
     <hr>
     <strong>#82 | Drag & Drop it! </strong>
     <div id="cars-holder">
-        <span id="bmw" draggable="true" ondragstart="dragIt(event)">BMW</span>
-        <span id="honda" draggable="true" ondragstart="dragIt(event)">Honda</span>
-        <span id="benz" draggable="true" ondragstart="dragIt(event)">Benz</span>
-        <span id="porsche" draggable="true" ondragstart="dragIt(event)">Porsche</span>
-        <span id="nissan" draggable="true" ondragstart="dragIt(event)">Nissan</span>
+        <span id="bmw" draggable="true" ondragstart="dragIt(event)" ondrag="dragged()" ondragend="dragEnd()">BMW</span>
+        <span id="honda" draggable="true" ondragstart="dragIt(event)" ondrag="dragged()"
+            ondragend="dragEnd()">Honda</span>
+        <span id="benz" draggable="true" ondragstart="dragIt(event)" ondrag="dragged()"
+            ondragend="dragEnd()">Benz</span>
+        <span id="porsche" draggable="true" ondragstart="dragIt(event)" ondrag="dragged()"
+            ondragend="dragEnd()">Porsche</span>
+        <span id="nissan" draggable="true" ondragstart="dragIt(event)" ondrag="dragged()"
+            ondragend="dragEnd()">Nissan</span>
     </div>
     <div id="boxes">
         <div class="item-box">
             <h3>German Cars</h3>
-            <div class="dragHere" ondrop="dropHere(event)" ondragover="clearOver(event)"></div>
+            <div class="dragHere" ondrop="dropHere(event)" ondragover="clearOver(event)" ondragenter="entered()"
+                ondragleave="leaved()"></div>
         </div>
         <div class="item-box">
             <h3>Japanese Cars</h3>
-            <div class="dragHere" ondrop="dropHere(event)" ondragover="clearOver(event)"></div>
+            <div class="dragHere" ondrop="dropHere(event)" ondragover="clearOver(event)" ondragenter="entered()"
+                ondragleave="leaved()"></div>
         </div>
     </div>
 

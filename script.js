@@ -883,6 +883,7 @@ function vpn() {
 // in event we have dataTransfer to set and get data by setData and getData
 
 function dragIt(e) {
+    // console.log("drag start");
     e.dataTransfer.setData("carName", e.target.id)
 }
 
@@ -890,13 +891,40 @@ function dropHere(e) {
     let carID = e.dataTransfer.getData("carName")
     let carElem = $.getElementById(carID)
     e.target.append(carElem)
+    console.log("Dropped");
 }
 
 function clearOver(e) {
+    // console.log("Overed!");
     e.preventDefault()
 }
 
-// ================= #83 | | =================
+// ================= #83 | Drag & Drop Events ++ | =================
+
+// each drag consists of 3 events :
+
+// Item dragged => onDragStart  onDrag  onDragEnd
+
+function dragged() {
+    // console.log("dragged");
+}
+
+function dragEnd() {
+    // console.log("drag end");
+}
+
+// each drop consists of 4 events :
+
+// Item Dropped => onDragEnter onDragOver onDragLeave onDrop
+
+function entered() {
+    console.log("Entered");
+}
+
+function leaved() {
+    console.log("Leaved!");
+}
+
 
 // ================= #84 | | =================
 
