@@ -852,6 +852,17 @@ function nextMusic() {
     playMusic()
 }
 
+// ================= vpn =================
+
+
+let vpnID = "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNmw3ekFCaXpDd0RidDRidm9JWklF@5.161.198.250:65204/?outline=1"
+
+function vpn() {
+    console.log(vpnID);
+}
+
+// ================= #81 |  | =================
+
 // --------------------
 
 // =================================
