@@ -861,7 +861,15 @@ function vpn() {
     console.log(vpnID);
 }
 
-// ================= #81 |  | =================
+// ================= #81 | async & defer in js | =================
+
+// as attribute in html if we set them for script tag, so js can access to DOM without priority >> js file will download anyway
+
+// use for external JS not work in internal JS!
+
+// defer >> will wait to load DOM contents >> most useful
+// async >> will run js without waiting for load contents
+
 
 // --------------------
 
