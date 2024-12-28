@@ -230,6 +230,7 @@ ul li {
 #cars-holder span {
   font-weight: bold;
   color: #543;
+  cursor: pointer;
 }
 
 #boxes {
@@ -239,6 +240,7 @@ ul li {
 }
 
 .item-box {
+  border-radius: 10px;
   width: 200px;
   border: 1px solid #aaa;
   padding: 5px;
@@ -256,7 +258,7 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  
+  color: #543;
 }
 
 @media screen and (max-width: 768px) {
