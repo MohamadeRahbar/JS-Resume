@@ -16,7 +16,7 @@
   <div class="modal" id="todo_form">
     <div class="header">
       <div class="title">Add Todo</div>
-      <button class="btn close-modal">&times;</button>
+      <button class="btn close-modal" onclick="closeModal()">&times;</button>
     </div>
     <div class="body">
       <input type="text" id="todo_input" />
@@ -27,7 +27,7 @@
   <div class="todo-container">
     <div class="status" id="no_status">
       <h1>No Status</h1>
-      <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
+      <button id="add_btn" data-target-modal="#todo_form" onclick="openModal()">+ Add Todo</button>
       <div class="todo" draggable="true">
         Buy a Pizza
         <span class="close">&times;</span>
@@ -46,7 +46,7 @@
 
   <div id="overlay"></div>
 
-  <script src="js/app.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -87,6 +87,11 @@ body {
   background: none;
   border: none;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-modal:active {
+  color: red;
 }
 
 .modal {
@@ -100,10 +105,11 @@ body {
   border-radius: 10px;
   z-index: 2;
   background-color: #fff;
+  box-shadow: 0 10px 30px 10px #444;
 }
 
 .modal.active {
-  top: 15%;
+  top: 25%;
 }
 
 .modal .header {
@@ -145,4 +151,14 @@ body {
   color: #f3f3f3;
   font-size: 1.25rem;
   border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+#todo_submit:active {
+  background-color: #319234;
+}
+
+#todo_submit:focus {
+  outline: none;
 }
