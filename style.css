@@ -221,6 +221,44 @@ ul li {
   background-color: rgb(22, 22, 22);
 }
 
+#cars-holder {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#cars-holder span {
+  font-weight: bold;
+  color: #543;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.item-box {
+  width: 200px;
+  border: 1px solid #aaa;
+  padding: 5px;
+  text-align: center;
+}
+
+.item-box h3 {
+  border-bottom: 2px solid #f00;
+}
+
+.dragHere {
+  text-align: center;
+  height: 100px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
 @media screen and (max-width: 768px) {
   
   p {

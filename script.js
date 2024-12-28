@@ -870,6 +870,37 @@ function vpn() {
 // defer >> will wait to load DOM contents >> most useful
 // async >> will run js without waiting for load contents
 
+// ================= #82 | Drag & Drop Events | =================
+
+// draggable >> true
+
+// ondragstart >> function
+
+// ondrop >> allocate to container element to run a function after drop a dragged item
+
+// ondragover >> after drag an item on it, will execute a function so we have prevent it
+
+// in event we have dataTransfer to set and get data by setData and getData
+
+function dragIt(e) {
+    e.dataTransfer.setData("carName", e.target.id)
+}
+
+function dropHere(e) {
+    let carID = e.dataTransfer.getData("carName")
+    let carElem = $.getElementById(carID)
+    e.target.append(carElem)
+}
+
+function clearOver(e) {
+    e.preventDefault()
+}
+
+// ================= #83 | | =================
+
+// ================= #84 | | =================
+
+// ================= #85 | | =================
 
 // --------------------
 
