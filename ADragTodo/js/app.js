@@ -1,5 +1,7 @@
 // holders
 
+// holders
+
 const $ = document;
 const UI = {
     container: $.getElementById("status-container"),
@@ -31,6 +33,7 @@ function openModal() {
     }
 }
 
+// close modal
 // close modal
 function closeModal() {
     UI.modal.classList.remove("active")
