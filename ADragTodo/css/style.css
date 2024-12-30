@@ -14,6 +14,16 @@ body {
   width: 1000px;
   height: 80vh;
   display: flex;
+  transition: all 0.3s;
+  
+}
+
+#status-container.drop {
+  gap: 5px;
+}
+
+#status-container.drop .status {
+  border: 1px dashed #555;
 }
 
 .status {
@@ -21,6 +31,7 @@ body {
   background-color: #f3f3f3;
   position: relative;
   padding: 60px 1rem 0.5rem;
+  transition: all 0.3s;
 }
 
 .status:nth-child(even) {
