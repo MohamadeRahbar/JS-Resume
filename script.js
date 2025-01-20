@@ -985,7 +985,7 @@ function leaved() {
 // });
 
 
-function textFinder(searchTerm) {
+function findIt(searchTerm) {
     let htmlContents = $.body.innerHTML;
 
     let words = htmlContents.split(/\b/);
