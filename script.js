@@ -929,25 +929,79 @@ function leaved() {
 
 // abbr of Regular Expression
 
-// use for string data's / search in text or documents based on a specific pattern 
+// use for string data's 
+// search in text or documents based on a specific pattern 
+// useful for check & validate inputs 
 
-// /regex/
+// /regex/flag
 
-// 
+// /regex/.test() >> boolean , is pattern exist in text
 
-// =================================
+// wildcard (.) use for anything : a.m > ahmad >> true 
 
-let userText = prompt("Enter Word That You Want To Find!")
+// wildcard + (+) >> use for anything anytime between : a.+m > ali salam >> true
+
+// use | or [] >> /as|ab|df/g >> will search for as , ab , df == /a[sbf]/g
+// use [^word] >> != 
+
+// / [a-z][a-z][a-z][a-z] /g 
+
+// /regex/g : global
+
+// ================================= textFinder mini project
+
+// it will update and developed when i learned RegEx better :)
+
+// let ctrlAltPressed = false;
+
+// document.addEventListener('keydown', function (event) {
+
+//     if (event.ctrlKey && event.altKey && event.key === 'f') {
+//         event.preventDefault();
 
 
-function textFinder(userText) {
+//         const input = document.createElement('input');
+//         input.type = 'text';
+//         input.placeholder = 'Enter word to highlight';
+//         input.id = 'highlightInput';
 
-    let bodyContents = $.body.innerHTML;
+
+//         const button = document.createElement('button');
+//         button.textContent = 'Highlight';
+//         button.onclick = function () {
+//             const searchTerm = input.value.trim();
+//             if (searchTerm) {
+//                 highlightText(searchTerm);
+//             }
+//             input.remove();
+//             button.remove();
+//         };
+
+//         document.body.appendChild(input);
+//         document.body.appendChild(button);
+
+//         input.focus();
+//     }
+// });
 
 
+function textFinder(searchTerm) {
+    let htmlContents = $.body.innerHTML;
 
+    let words = htmlContents.split(/\b/);
+
+
+    for (let i = 0; i < words.length; i++) {
+
+        if (words[i].toLowerCase() === searchTerm.toLowerCase()) {
+
+            words[i] = `<span class="textFound">${words[i]}</span>`;
+        }
+    }
+
+
+    $.body.innerHTML = words.join('');
 }
-
 
 
 // ================= #84 | | =================
