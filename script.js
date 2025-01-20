@@ -925,11 +925,33 @@ function leaved() {
     console.log("Leaved!");
 }
 
+// ================= #300 | RegEx | =================
+
+// abbr of Regular Expression
+
+// use for string data's / search in text or documents based on a specific pattern 
+
+// /regex/
+
+// 
+
+// =================================
+
+let userText = prompt("Enter Word That You Want To Find!")
+
+
+function textFinder(userText) {
+
+    let bodyContents = $.body.innerHTML;
+
+
+
+}
+
+
 
 // ================= #84 | | =================
 
 // ================= #85 | | =================
 
 // --------------------
-
-// =================================

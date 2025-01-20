@@ -261,6 +261,11 @@ ul li {
   color: #543;
 }
 
+.textFound {
+  background-color: yellow;
+  padding: 2px 5px;
+}
+
 @media screen and (max-width: 768px) {
   
   p {
